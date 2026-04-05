@@ -537,13 +537,16 @@
         .phil-icon {
             width: 44px;
             height: 44px;
-            background: var(--surface);
-            border: 1px solid var(--border);
+            background: var(--navy);
+            color: var(--white);
+            border: none;
             border-radius: var(--r);
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 1.15rem;
+            font-size: 0.75rem;
+            font-weight: 700;
+            letter-spacing: 0.02em;
             flex-shrink: 0;
         }
 
@@ -603,11 +606,14 @@
 
         .service-card:hover::before { opacity: 1; }
 
-        .service-icon {
-            font-size: 1.9rem;
-            margin-bottom: 1.1rem;
+        .service-card h3::before {
+            content: '';
             display: block;
-            line-height: 1;
+            width: 32px;
+            height: 3px;
+            background: linear-gradient(90deg, var(--navy), var(--blue-light));
+            border-radius: 2px;
+            margin-bottom: 1rem;
         }
 
         .service-card h3 {
@@ -1110,6 +1116,25 @@
         }
 
         /* ============================================================
+           ANIMATIONS
+        ============================================================ */
+        @keyframes fadeUp {
+            from { opacity: 0; transform: translateY(24px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .fade-in {
+            opacity: 0;
+            transform: translateY(24px);
+            transition: opacity 0.7s ease, transform 0.7s ease;
+        }
+
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* ============================================================
            UTILITY
         ============================================================ */
         .text-center { text-align: center; }
@@ -1118,6 +1143,13 @@
     </style>
 </head>
 <body>
+
+    <!-- ============================================================
+         TOP BAR
+    ============================================================ -->
+    <div style="background:var(--navy);text-align:center;padding:0.5rem 1rem;font-size:0.75rem;color:rgba(255,255,255,0.6);letter-spacing:0.04em;">
+        2016 &ndash; 2026 &nbsp;&middot;&nbsp; Kümme aastat Tallinnas &nbsp;&middot;&nbsp; Sepapaja 12/1, Ülemiste Tervisemaja
+    </div>
 
     <!-- ============================================================
          NAVIGATION
@@ -1157,9 +1189,8 @@
             </h1>
 
             <p class="hero-sub">
-                Haigestuda on piisavalt raske. Esimene küsimus ei peaks olema: kuhu ma nüüd lähen?<br>
-                Sepapaja 12/1 kolmandal korrusel ootab <strong>vastuvõtt, labor ja eriarstid</strong>
-                samal päeval, ühe käiguga. Kümme aastat on see nii töötanud.
+                Haigestuda on piisavalt raske.<br>
+                Esimene küsimus ei peaks olema: kuhu ma nüüd lähen?
             </p>
 
             <div class="hero-buttons">
@@ -1226,7 +1257,7 @@
                 <div class="philosophy-right">
 
                     <div class="phil-point">
-                        <div class="phil-icon">⏱</div>
+                        <div class="phil-icon">01</div>
                         <div class="phil-text">
                             <h4>Arst samal päeval</h4>
                             <p>Enamik patsiente näeb arsti samal päeval. Erakorralistel juhtudel vastuvõtt kohe, ilma eelregistreerimiseta.</p>
@@ -1234,7 +1265,7 @@
                     </div>
 
                     <div class="phil-point">
-                        <div class="phil-icon">🔬</div>
+                        <div class="phil-icon">02</div>
                         <div class="phil-text">
                             <h4>Tulemused kohapeal</h4>
                             <p>Labor, diagnostika ja vastuvõtt asuvad ühel korrusel. Analüüside tulemused jõuavad sageli tagasi samal külastusel.</p>
@@ -1242,7 +1273,7 @@
                     </div>
 
                     <div class="phil-point">
-                        <div class="phil-icon">🗺</div>
+                        <div class="phil-icon">03</div>
                         <div class="phil-text">
                             <h4>Järgmine samm on korraldatud</h4>
                             <p>Vajad spetsialisti? Ta on samas majas. Suunamine juhtub koheselt, ilma kuuenädalase ooteajata.</p>
@@ -1271,35 +1302,30 @@
             <div class="services-grid">
 
                 <article class="service-card">
-                    <span class="service-icon">🩺</span>
                     <h3>Erakorraline vastuvõtt</h3>
                     <p>Äge haigus, vigastus, haavahooldus, infusioonravi. Töötame laiendatud lahtiolekuaegadega, ka nädalavahetustel. Eelregistreerimine ei ole nõutav.</p>
                     <a href="tel:+37259110909" class="service-link">Tule kohale &rarr;</a>
                 </article>
 
                 <article class="service-card">
-                    <span class="service-icon">👨‍👩‍👧</span>
                     <h3>Perekliinik</h3>
                     <p>Perearstiteenused, krooniliste haiguste jälgimine, tervisekontrollid ja vaktsineerimised. Planeeritud vastuvõttude jaoks soovitame aega broneerida.</p>
                     <a href="tel:+37259110909" class="service-link">Broneeri aeg &rarr;</a>
                 </article>
 
                 <article class="service-card">
-                    <span class="service-icon">🧪</span>
                     <h3>Laboriteenus</h3>
                     <p>Vere- ja uriinianalüüsid, biomarkerite jälgimine. Tulemused kiiresti. Paljusid analüüse saab tellida otse, arsti suunamiseta.</p>
                     <a href="tel:+37259110909" class="service-link">Küsi lisainfot &rarr;</a>
                 </article>
 
                 <article class="service-card">
-                    <span class="service-icon">📊</span>
                     <h3>Diagnostika</h3>
                     <p>EKG, spiromeetria, haavahooldus ja kliinilised protseduurid kohapeal. Vajalik varustus on alati käepärast, tulemused kohe.</p>
                     <a href="tel:+37259110909" class="service-link">Vaata võimalusi &rarr;</a>
                 </article>
 
                 <article class="service-card">
-                    <span class="service-icon">👨‍⚕️</span>
                     <h3>Eriarstide konsultatsioonid</h3>
                     <p>Valik spetsialiste ühes hoones. Suunamine juhtub kohe, mitte kuue nädala pärast. Küsi registratuurist, kes parasjagu saadaval on.</p>
                     <a href="tel:+37259110909" class="service-link">Uuri avasid &rarr;</a>
@@ -1669,6 +1695,20 @@
                 }, 2200);
             }
         }
+
+        // Scroll fade-in
+        (function() {
+            var els = document.querySelectorAll('.section-header, .philosophy-inner, .service-card, .journey-step, .milestone-inner, .share-box');
+            var obs = new IntersectionObserver(function(entries) {
+                entries.forEach(function(e) {
+                    if (e.isIntersecting) {
+                        e.target.classList.add('fade-in', 'visible');
+                        obs.unobserve(e.target);
+                    }
+                });
+            }, { threshold: 0.15, rootMargin: '0px 0px -40px 0px' });
+            els.forEach(function(el) { el.classList.add('fade-in'); obs.observe(el); });
+        })();
 
         // Offer form placeholder handler
         function handleOfferForm(e) {
