@@ -5,10 +5,10 @@
 ## HERO
 
 **Pealkiri:**
-10 aastat. Üks koht. Kogu vastus.
+Kümme aastat. Iga kord kohal, kui loeb.
 
 **Alapealkiri:**
-Valvekliinik tähistab 2026. aastal oma kümnendat sünnipäeva. Kümme aastat kiiret, asjatundlikku ja inimlikku arstiabi Tallinna südames. Täname iga patsienti, kes on meisse usaldanud kõige olulisemat.
+2016. aastal avasime uksed ühe selge eesmärgiga: kiire ja asjatundlik arstiabi peab Tallinnas olema kättesaadav ka siis, kui tavapärane süsteem enam ei toeta. Kümme aastat hiljem see põhimõte ei ole muutunud.
 
 **CTA nupp:**
 Broneeri vastuvõtt
@@ -18,39 +18,37 @@ Broneeri vastuvõtt
 ## USALDUSE RAAMISTIK
 
 **Pealkiri:**
-Miks Valvekliinik?
+Kümme aastat ei ole lihtsalt number.
 
-Kiire reageerimine ja meditsiiniline kompetents ei pea olema vastandid. Valvekliinik on kümne aasta jooksul tõestanud, et saab mõlemat korraga.
-
-Meie kliinik tegutseb Ülemiste Tervisemajas, kus samas majas leiad kõik, mida tervise eest hoolitsemiseks vajad. Lühikesed ooteajad, selged selgitused ja vastutustundlik lähenemine on olnud meie põhimõtted algusest peale.
+Tegutsemisaeg tähendab meile kogemust, mida ei osta, ei laenata ega asenda. Iga aastaga oleme täpsustanud, mis päriselt töötab, ja hoidnud seda, mis ei vaja muutmist. Tulemus on lihtne: kiire vastuvõtt, selge suhtlus, vastutustundlik arstiabi.
 
 **Kolm tugisamba teksti (lühike, ikoonidega):**
 
 Kogenud meeskond
-Meie arstid ja õed on läbinud põhjaliku väljaõppe ning töötavad igapäevaselt erakorralise meditsiini ja esmatasandi arstiabi ristumiskohal.
+Meie arstid töötavad erakorralise meditsiini ja esmatasandi arstiabi ristumiskohal. Väljaõpe on põhjalik, reaktsioon kiire, lähenemine inimlik.
 
-Lühike ooteaeg
-Enamik patsiente näeb arsti samal päeval. Erakorralistel juhtudel ka kohe.
+Samal päeval
+Enamik patsiente näeb arsti samal päeval. Erakorralistel juhtudel koheselt, ilma ooteajata.
 
-Üks katuse all
-Vastuvõtt, diagnostika, protseduurid ja konsultatsioonid asuvad samas hoones. Sa ei pea kuhugi mujale minema.
+Kõik ühes majas
+Vastuvõtt, diagnostika, protseduurid ja erialakonsultatsioonid asuvad ühel korrusel. Sa ei pea kuhugi edasi sõitma.
 
 ---
 
 ## TEENUSTE ÜLEVAADE
 
 **Pealkiri:**
-Kõik, mida vajad, ühel korrusel
+Üks hoone. Täielik lahendus.
 
-Ülemiste Tervisemaja 2 on midagi enamat kui kliinik. Siin töötab koos terve ökosüsteem, kus erinevad erialad ja teenused täiendavad teineteist loomulikult. Kui perearst suunab edasi, on spetsialist samas koridoris.
+Ülemiste Tervisemaja on kavandatud nii, et meditsiinilised vajadused saaksid täidetud ühes kohas. Meie erialad täiendavad üksteist loomulikult. Kui üks spetsialist suunab edasi, on järgmine samas koridoris.
 
 **Teenuste plokid:**
 
 **Valvekliinik / Kiirabi ja valve**
-Erakorraline vastuvõtt, haavade ravi, vigastused, äge haigus, infusioonravi. Avatud laial tööajal, vastuvõtt ka ilma eelregistreerimiseta.
+Erakorraline vastuvõtt, haavade ravi, vigastused, äge haigus, infusioonravi. Töötame laiendatud lahtiolekuaegadega. Eelregistreerimine ei ole nõutav.
 
 **Perekliinik / Esmatasand**
-Perearstiteenused, krooniline haiguste jälgimine, tervisekontrollid, vaktsineerimised ja suunamised eriarstile.
+Perearstiteenused, krooniliste haiguste jälgimine, tervisekontrollid, vaktsineerimised ja eriarstile suunamine.
 
 **Laboriteenus**
 Vere- ja uriinianalüüsid, biomarkerite jälgimine, tulemused kiiresti. Saab tellida otse, ilma suunamiseta.
@@ -59,41 +57,39 @@ Vere- ja uriinianalüüsid, biomarkerite jälgimine, tulemused kiiresti. Saab te
 EKG, spiromeetria, haavahooldus ja muud kliinilised protseduurid kohapeal.
 
 **Konsultatsioonid eriarstidega**
-Valik erialaspetsialiste ühes hoones. Vajaduse korral saame korraldada kiire edasisuunamise.
+Valik erialaspetsialiste ühes hoones. Vajaduse korral korraldame kiire edasisuunamise.
 
-*Konkreetne teenuste loend täpsustub koos kliinikuga. Ülemine struktuur on mõeldud põhjalikumaks täitmiseks.*
+*Teenuste täpne loend täpsustub koos kliinikuga enne avaldamist.*
 
 ---
 
-## JUUBELIPAKKUMINE
+## JUUBELIAASTA ALGATUS
 
 **Pealkiri:**
-Kümne aasta tänuks
+Kümme aastat. Midagi, mis päriselt loeb.
 
-[PAKKUMISE PLATSEHOLDER]
+Juubeliaasta tähistamiseks teeme oktoobrist novembrini 2026 midagi konkreetset. Mitte hinnasoodustust, vaid algatus, mis tegelikult väärtust annab. Detailid avalikustame oktoobri alguses.
 
-Tähistamiseks pakume oktoobrist novembrini 2026 eripakkumist, mille detailid avalikustame peagi. Pakkumine on suunatud nii uutele kui ka pikaajalistele patsientidele.
-
-Jäta oma e-posti aadress, et saada esimesena teada.
+Jäta oma e-posti aadress ja saad esimeste seas teada.
 
 **Väli:** E-posti aadress
 **Nupp:** Teavita mind
 
-*Allkiri: Me ei saada rämpsposti. Ainult see, mida tõeliselt lubame.*
+*Me ei saada rämpsposti. Ainult see, mida lubame.*
 
 ---
 
 ## SOOVITAMINE JA JAGAMINE
 
 **Pealkiri:**
-Tunned kedagi, kes vajab head arsti?
+Hea arst on väärt jagamist.
 
-Parim kompliment on soovitus. Kui Valvekliinik on aidanud sind või su perekonda, jaga seda infot inimestega, kellele sa hoolid.
+Kui Valvekliinik on aidanud sind või su lähedasi, on parim viis tänada jagada seda inimestega, kes usaldusväärset arsti otsivad.
 
-Kopeeri link ja saada sõbrale, kes otsib usaldusväärset arsti Tallinnas.
+Saada link edasi. Sõbrale, kolleegile, pereliikmele.
 
 **Jagamistekst (valmis kopeerimiseks):**
-"Valvekliinik Ülemiste Tervisemajas on 10 aastat tegutsenud kiirabikliinik, kus arsti juurde pääseb kiiresti ja töö on põhjalik. Soovitan vaadata: valvekliinik.ee"
+"Valvekliinik Ülemiste Tervisemajas on 10 aastat tegutsenud kiirabiasutus, kus arsti juurde pääseb kiiresti, töö on põhjalik ja kogu vajalik on ühes majas. Soovitan: valvekliinik.ee"
 
 **Nupud:** Jaga Facebookis / Kopeeri link
 
@@ -102,22 +98,22 @@ Kopeeri link ja saada sõbrale, kes otsib usaldusväärset arsti Tallinnas.
 ## KKK (KORDUMA KIPPUVAD KÜSIMUSED)
 
 **Kas pean eelnevalt registreeruma?**
-Erakorraliseks vastuvõtuks ei ole registreerimine vajalik, tule kohale. Planeeritud vastuvõttudeks soovitame registreeruda telefoni või veebibroneeringu kaudu, et tagada sobiv aeg.
+Erakorraliseks vastuvõtuks ei ole registreerimine nõutav. Planeeritud vastuvõttude jaoks soovitame broneerida telefoni või veebilehe kaudu, et tagada sobiv vastuvõtuaeg.
 
 **Mis vahe on Valvekliinikul ja tavapärasel eraarstil?**
-Valvekliinik on spetsialiseerunud kiiretele vastuvõttudele ja erakorralistele olukordadele. Töötame laiendatud lahtiolekuaegadega ja meil on kohal vahendid, mida tavavastu võtus ei leidu, näiteks infusioonravi ja haavahooldus.
+Valvekliinik on spetsialiseerunud kiiretele vastuvõttudele ja erakorralistele olukordadele. Töötame laiendatud lahtiolekuaegadega ja meil on kohapeal vahendid, mida tavapärases vastuvõtus ei leia: infusioonravi, haavahooldus, kohene diagnostika.
 
 **Kas teenused sobivad ka lastele?**
-Jah, võtame vastu nii lapsi kui ka täiskasvanuid. Täpse vanusepiirangu ning laste erivaatuste info saad meie registratuurist.
+Jah, võtame vastu nii lapsi kui ka täiskasvanuid. Täpse teabe laste vastuvõtu tingimuste kohta saad meie registratuurist.
 
 **Kas analüüse saab teha ilma arsti suunamiseta?**
-Jah. Paljusid analüüse saab tellida otse laboriteeenuse kaudu. Täpse loendi leiad meie kodulehelt või saad küsida registratuurist.
+Jah. Paljusid analüüse saab tellida otse labori kaudu. Täpse loendi leiad meie kodulehelt või küsi registratuurist.
 
 **Millised on vastuvõtuajad?**
-Lahtiolekuajad leiad ajakohased meie kodulehelt. Oleme avatud ka nädalavahetustel.
+Kehtivad lahtiolekuajad leiad ajakohased meie kodulehelt. Oleme avatud ka nädalavahetustel.
 
 **Kus asub kliinik täpselt?**
-Asume Ülemiste Tervisemajas, aadressil Lõõtsa 2, Tallinn. Maja on hästi ligipääsetav nii autoga kui ka ühistranspordiga. Parkimine on kohapeal võimalik.
+Asume Ülemiste Tervisemajas aadressil Lõõtsa 2, Tallinn. Maja on hästi ligipääsetav nii autoga kui ka ühistranspordiga. Parkimine on kohapeal võimalik.
 
 ---
 
@@ -127,7 +123,7 @@ Asume Ülemiste Tervisemajas, aadressil Lõõtsa 2, Tallinn. Maja on hästi ligi
 
 Kümmend aastat hiljem, ikkagi sinu kõrval.
 
-Broneeri vastuvõtt täna ja veendu ise, miks tuhandeid tallinnlasi valib just Valvekliiniku.
+Broneeri vastuvõtt ja tule veendu ise, millest räägime.
 
 **Nupp:** Broneeri vastuvõtt
 
@@ -147,4 +143,4 @@ Tegutsenud aastast 2016. Osa Lindströmi meditsiiniperekonnast.
 
 ---
 
-*Märkus: Kõik kontaktandmed, pakkumise detailid ja teenuste täpne loend tuleb kinnitada kliiniku meeskonnaga enne avaldamist.*
+*Märkus: Kõik kontaktandmed, juubeliaasta algatus ja teenuste täpne loend tuleb kinnitada kliiniku meeskonnaga enne avaldamist.*
