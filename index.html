@@ -3,20 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Valvekliinik 10 aastat | Ülemiste Tervisemaja, Tallinn</title>
-    <meta name="description" content="Valvekliinik tähistab 2026. aastal oma 10. sünnipäeva. Erakorraline vastuvõtt, perearst, laboriteenus, diagnostika ja eriarstid ühel korrusel Ülemiste Tervisemajas, Tallinnas.">
+    <title>Valvekliinik · Kümme aastat | Sepapaja 12/1, Tallinn</title>
+    <meta name="description" content="Valvekliinik tähistab 2026. aastal kümnendat tegutsemisaastat. Erakorraline vastuvõtt, perearst, labor ja eriarstid ühel korrusel Ülemiste Tervisemajas, Sepapaja 12/1, Tallinn.">
 
     <!-- Open Graph -->
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Valvekliinik 10 aastat | Üks koht. Kogu vastus.">
-    <meta property="og:description" content="Kümme aastat kiiret, asjatundlikku ja inimlikku arstiabi Tallinna südames. Erakorraline vastuvõtt, perearst, labor ja eriarstid ühel korrusel.">
-    <meta property="og:image" content="[OG_IMAGE_URL]">
+    <meta property="og:title" content="Valvekliinik · Kümme aastat">
+    <meta property="og:description" content="Kümme aastat kiiret, asjatundlikku arstiabi Tallinna Ülemiste Tervisemajas. Vastuvõtt, labor, diagnostika ja eriarstid ühel korrusel. Sepapaja 12/1.">
+    <meta property="og:image" content="https://valvekliinik.ee/og-10y.jpg">
     <meta property="og:url" content="https://valvekliinik.ee/10">
+    <meta property="og:locale" content="et_EE">
+
+    <!-- Canonical -->
+    <link rel="canonical" href="https://valvekliinik.ee/10">
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
 
     <!-- Schema.org -->
     <script type="application/ld+json">
@@ -24,15 +28,24 @@
         "@context": "https://schema.org",
         "@type": "MedicalClinic",
         "name": "Valvekliinik",
-        "description": "Erakorralise meditsiini ja esmatasandi arstiabi kliinik Ülemiste Tervisemajas, Tallinnas.",
+        "description": "Erakorralise meditsiini, esmatasandi arstiabi ja diagnostika kliinik Ülemiste Tervisemajas, Tallinnas.",
         "url": "https://valvekliinik.ee",
+        "telephone": "+37259110909",
+        "email": "info@valvekliinik.ee",
         "address": {
             "@type": "PostalAddress",
             "streetAddress": "Sepapaja 12/1",
             "addressLocality": "Tallinn",
+            "postalCode": "11415",
             "addressCountry": "EE"
         },
-        "foundingDate": "2016"
+        "foundingDate": "2016",
+        "openingHoursSpecification": [
+            {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"]
+            }
+        ]
     }
     </script>
 
@@ -45,12 +58,14 @@
         :root {
             --navy:          #0d2d4f;
             --navy-mid:      #163d63;
+            --navy-deep:     #091f38;
             --blue:          #1d5fa8;
             --blue-light:    #2e7cd1;
+            --blue-pale:     rgba(45,124,209,0.1);
 
             --green:         #2a7a4e;
             --green-hover:   #226040;
-            --green-glow:    rgba(42, 122, 78, 0.22);
+            --green-glow:    rgba(42,122,78,0.22);
 
             --ink:           #0f172a;
             --ink-mid:       #374151;
@@ -58,6 +73,7 @@
             --surface:       #f8fafc;
             --surface-mid:   #f1f5f9;
             --border:        #e2e8f0;
+            --border-mid:    #cbd5e1;
             --white:         #ffffff;
 
             --font:          'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
@@ -90,7 +106,8 @@
 
         h1 { font-size: clamp(1.85rem, 5.5vw, 2.9rem); }
         h2 { font-size: clamp(1.5rem, 4vw, 2.15rem); }
-        h3 { font-size: clamp(1rem, 2.5vw, 1.2rem); font-weight: 600; }
+        h3 { font-size: clamp(1rem, 2.5vw, 1.15rem); font-weight: 600; }
+        h4 { font-size: 0.95rem; font-weight: 600; letter-spacing: 0; }
 
         p { margin-bottom: 1rem; }
         p:last-child { margin-bottom: 0; }
@@ -118,15 +135,15 @@
             display: inline-flex;
             align-items: center;
             gap: 0.35rem;
-            background: rgba(45,124,209,0.1);
+            background: var(--blue-pale);
             color: var(--blue);
-            font-size: 0.78rem;
+            font-size: 0.75rem;
             font-weight: 600;
-            letter-spacing: 0.07em;
+            letter-spacing: 0.08em;
             text-transform: uppercase;
             padding: 0.35rem 1rem;
             border-radius: 50px;
-            margin-bottom: 1.1rem;
+            margin-bottom: 1.25rem;
             border: 1px solid rgba(45,124,209,0.18);
         }
 
@@ -173,7 +190,7 @@
 
         .btn-outline {
             background: transparent;
-            border-color: rgba(255,255,255,0.7);
+            border-color: rgba(255,255,255,0.6);
             color: var(--white);
         }
 
@@ -182,6 +199,20 @@
             border-color: var(--white);
             color: var(--navy);
             box-shadow: 0 6px 20px rgba(0,0,0,0.18);
+        }
+
+        .btn-ghost {
+            background: transparent;
+            border-color: var(--border-mid);
+            color: var(--ink-mid);
+        }
+
+        .btn-ghost:hover {
+            background: var(--surface);
+            border-color: var(--blue-light);
+            color: var(--navy);
+            box-shadow: none;
+            transform: none;
         }
 
         .btn-blue {
@@ -204,9 +235,9 @@
            HEADER / NAV
         ============================================================ */
         header {
-            background: rgba(255,255,255,0.95);
-            backdrop-filter: blur(12px);
-            -webkit-backdrop-filter: blur(12px);
+            background: rgba(255,255,255,0.96);
+            backdrop-filter: blur(14px);
+            -webkit-backdrop-filter: blur(14px);
             box-shadow: 0 1px 0 var(--border);
             position: sticky;
             top: 0;
@@ -226,6 +257,7 @@
             display: flex;
             flex-direction: column;
             gap: 0.1rem;
+            text-decoration: none;
         }
 
         .logo-name {
@@ -237,7 +269,7 @@
         }
 
         .logo-sub {
-            font-size: 0.7rem;
+            font-size: 0.68rem;
             font-weight: 400;
             color: var(--ink-light);
             letter-spacing: 0.01em;
@@ -267,6 +299,7 @@
             font-weight: 600;
             font-size: 0.875rem !important;
             transition: background 0.15s, transform 0.15s;
+            text-decoration: none;
         }
 
         .nav-cta:hover {
@@ -283,23 +316,34 @@
            HERO
         ============================================================ */
         .hero {
-            background: linear-gradient(145deg, var(--navy) 0%, var(--navy-mid) 55%, var(--blue) 100%);
+            background: linear-gradient(160deg, var(--navy-deep) 0%, var(--navy) 45%, var(--navy-mid) 80%, #1a4d7a 100%);
             color: var(--white);
-            padding: clamp(4rem, 12vw, 7rem) 0 clamp(3.5rem, 10vw, 6rem);
+            padding: clamp(4.5rem, 13vw, 8rem) 0 clamp(4rem, 11vw, 7rem);
             text-align: center;
             position: relative;
             overflow: hidden;
         }
 
-        /* Subtle grid overlay */
+        /* Subtle dot pattern */
         .hero::before {
             content: '';
             position: absolute;
             inset: 0;
-            background-image:
-                linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px),
-                linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px);
-            background-size: 48px 48px;
+            background-image: radial-gradient(circle, rgba(255,255,255,0.04) 1px, transparent 1px);
+            background-size: 36px 36px;
+            pointer-events: none;
+        }
+
+        /* Soft radial glow bottom-center */
+        .hero::after {
+            content: '';
+            position: absolute;
+            bottom: -120px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 700px;
+            height: 400px;
+            background: radial-gradient(ellipse, rgba(45,124,209,0.12) 0%, transparent 65%);
             pointer-events: none;
         }
 
@@ -308,29 +352,40 @@
         .hero-badge {
             display: inline-flex;
             align-items: center;
-            gap: 0.5rem;
-            background: rgba(255,255,255,0.12);
-            border: 1px solid rgba(255,255,255,0.25);
-            color: rgba(255,255,255,0.95);
-            font-size: 0.85rem;
+            gap: 0.6rem;
+            background: rgba(255,255,255,0.08);
+            border: 1px solid rgba(255,255,255,0.2);
+            color: rgba(255,255,255,0.88);
+            font-size: 0.8rem;
             font-weight: 500;
-            letter-spacing: 0.02em;
-            padding: 0.45rem 1.3rem;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+            padding: 0.5rem 1.4rem;
             border-radius: 50px;
-            margin-bottom: 1.75rem;
+            margin-bottom: 2rem;
+        }
+
+        .hero-badge-dot {
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background: #4ade80;
+            flex-shrink: 0;
         }
 
         .hero h1 {
             color: var(--white);
-            margin-bottom: 1.25rem;
-            font-size: clamp(2.1rem, 6vw, 3.4rem);
+            margin-bottom: 1.5rem;
+            font-size: clamp(2.4rem, 7vw, 4rem);
             font-weight: 800;
-            letter-spacing: -0.03em;
+            letter-spacing: -0.035em;
+            line-height: 1.1;
         }
 
-        .hero h1 span {
+        .hero h1 em {
+            font-style: normal;
             display: block;
-            background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(180,215,255,0.9) 100%);
+            background: linear-gradient(95deg, #a8c8f0 0%, #ffffff 50%, #c8e4f8 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
@@ -338,11 +393,16 @@
 
         .hero-sub {
             font-size: clamp(1rem, 2.5vw, 1.15rem);
-            color: rgba(255,255,255,0.85);
+            color: rgba(255,255,255,0.75);
             max-width: 600px;
-            margin: 0 auto 2.75rem;
-            line-height: 1.75;
+            margin: 0 auto 3rem;
+            line-height: 1.8;
             font-weight: 400;
+        }
+
+        .hero-sub strong {
+            color: rgba(255,255,255,0.95);
+            font-weight: 600;
         }
 
         .hero-buttons {
@@ -352,13 +412,27 @@
             flex-wrap: wrap;
         }
 
+        .btn-tel {
+            background: rgba(255,255,255,0.1);
+            border: 1.5px solid rgba(255,255,255,0.35);
+            color: var(--white);
+            font-weight: 500;
+            font-size: 0.93rem;
+        }
+
+        .btn-tel:hover {
+            background: rgba(255,255,255,0.18);
+            border-color: rgba(255,255,255,0.6);
+            transform: translateY(-1px);
+            box-shadow: none;
+        }
+
         /* ============================================================
            TRUST STRIP
         ============================================================ */
         .trust-strip {
             background: var(--white);
             border-bottom: 1px solid var(--border);
-            padding: 0;
         }
 
         .trust-strip-inner {
@@ -384,79 +458,118 @@
 
         .trust-stat strong {
             display: block;
-            font-size: clamp(1.8rem, 4vw, 2.5rem);
+            font-size: clamp(1.9rem, 4vw, 2.6rem);
             font-weight: 800;
             color: var(--navy);
             line-height: 1;
-            letter-spacing: -0.03em;
-            margin-bottom: 0.35rem;
+            letter-spacing: -0.04em;
+            margin-bottom: 0.4rem;
         }
 
         .trust-stat span {
-            font-size: 0.82rem;
+            font-size: 0.8rem;
             color: var(--ink-light);
             font-weight: 500;
             text-transform: uppercase;
-            letter-spacing: 0.04em;
+            letter-spacing: 0.05em;
+            line-height: 1.4;
+            display: block;
         }
 
         /* ============================================================
-           WHY VALVEKLIINIK — 3 PILLARS
+           PHILOSOPHY / WHY SECTION (editorial 2-col, replaces pillar cards)
         ============================================================ */
-        .pillars { background: var(--surface); }
+        .philosophy {
+            background: var(--white);
+        }
 
-        .pillars-grid {
+        .philosophy-inner {
             display: grid;
             grid-template-columns: 1fr;
-            gap: 1.5rem;
+            gap: 3.5rem;
+            align-items: start;
         }
 
-        @media (min-width: 640px) { .pillars-grid { grid-template-columns: repeat(3, 1fr); } }
+        @media (min-width: 860px) {
+            .philosophy-inner {
+                grid-template-columns: 1.1fr 0.9fr;
+                gap: 6rem;
+                align-items: center;
+            }
+        }
 
-        .pillar {
-            background: var(--white);
+        .philosophy-left .section-tag { margin-bottom: 1.25rem; }
+
+        .philosophy-statement {
+            font-size: clamp(1.55rem, 3.8vw, 2.2rem);
+            font-weight: 700;
+            color: var(--navy);
+            line-height: 1.3;
+            letter-spacing: -0.025em;
+            margin-bottom: 1.5rem;
+        }
+
+        .philosophy-body {
+            color: var(--ink-mid);
+            font-size: 1.03rem;
+            line-height: 1.85;
+        }
+
+        .philosophy-body p { margin-bottom: 1rem; }
+        .philosophy-body p:last-child { margin-bottom: 0; }
+
+        .philosophy-right {
+            display: flex;
+            flex-direction: column;
+            gap: 0;
+        }
+
+        .phil-point {
+            display: flex;
+            gap: 1.25rem;
+            align-items: flex-start;
+            padding: 1.75rem 0;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .phil-point:first-child { border-top: 1px solid var(--border); }
+
+        .phil-icon {
+            width: 44px;
+            height: 44px;
+            background: var(--surface);
             border: 1px solid var(--border);
             border-radius: var(--r);
-            padding: 2.25rem 2rem;
-            position: relative;
-            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.15rem;
+            flex-shrink: 0;
         }
 
-        .pillar::before {
-            content: '';
-            position: absolute;
-            top: 0; left: 0; right: 0;
-            height: 3px;
-            background: linear-gradient(90deg, var(--navy), var(--blue-light));
-        }
-
-        .pillar-icon {
-            font-size: 2rem;
-            margin-bottom: 1.25rem;
-            display: block;
-            line-height: 1;
-        }
-
-        .pillar h3 {
+        .phil-text h4 {
             color: var(--navy);
-            margin-bottom: 0.65rem;
-            font-size: 1.1rem;
+            font-size: 0.95rem;
+            font-weight: 700;
+            margin-bottom: 0.3rem;
+            letter-spacing: -0.01em;
         }
 
-        .pillar p {
+        .phil-text p {
+            font-size: 0.88rem;
             color: var(--ink-mid);
-            font-size: 0.94rem;
-            line-height: 1.7;
+            line-height: 1.65;
+            margin: 0;
         }
 
         /* ============================================================
            SERVICES
         ============================================================ */
-        .services { background: var(--white); }
+        .services { background: var(--surface); }
 
         .services-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(285px, 1fr));
+            grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
             gap: 1.5rem;
         }
 
@@ -468,13 +581,27 @@
             transition: box-shadow 0.22s ease, transform 0.22s ease, border-color 0.22s ease;
             display: flex;
             flex-direction: column;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .service-card::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, var(--navy), var(--blue-light));
+            opacity: 0;
+            transition: opacity 0.22s ease;
         }
 
         .service-card:hover {
             box-shadow: var(--shadow-lg);
             transform: translateY(-4px);
-            border-color: var(--blue-light);
+            border-color: transparent;
         }
+
+        .service-card:hover::before { opacity: 1; }
 
         .service-icon {
             font-size: 1.9rem;
@@ -485,14 +612,14 @@
 
         .service-card h3 {
             color: var(--navy);
-            margin-bottom: 0.6rem;
-            font-size: 1.1rem;
+            margin-bottom: 0.65rem;
+            font-size: 1.05rem;
         }
 
         .service-card p {
             color: var(--ink-mid);
-            font-size: 0.93rem;
-            line-height: 1.7;
+            font-size: 0.92rem;
+            line-height: 1.72;
             flex: 1;
             margin-bottom: 1.5rem;
         }
@@ -510,173 +637,225 @@
 
         .service-link:hover {
             color: var(--navy);
-            gap: 0.5rem;
+            gap: 0.55rem;
             text-decoration: none;
         }
 
         /* ============================================================
-           ECOSYSTEM / SAME FLOOR
+           FLOOR STORY (replaces old ecosystem card grid)
         ============================================================ */
-        .ecosystem {
+        .floor-story {
             background: var(--navy);
             color: var(--white);
             position: relative;
             overflow: hidden;
         }
 
-        .ecosystem::before {
+        .floor-story::before {
             content: '';
             position: absolute;
-            top: -60px; right: -60px;
-            width: 420px; height: 420px;
-            background: radial-gradient(circle, rgba(45,124,209,0.15) 0%, transparent 70%);
+            top: -80px; right: -80px;
+            width: 500px; height: 500px;
+            background: radial-gradient(circle, rgba(45,124,209,0.1) 0%, transparent 65%);
             pointer-events: none;
         }
 
-        .ecosystem .section-tag {
+        .floor-story::after {
+            content: '';
+            position: absolute;
+            bottom: -60px; left: -60px;
+            width: 400px; height: 400px;
+            background: radial-gradient(circle, rgba(42,122,78,0.07) 0%, transparent 65%);
+            pointer-events: none;
+        }
+
+        .floor-story .section-tag {
             background: rgba(255,255,255,0.1);
-            color: rgba(255,255,255,0.85);
-            border-color: rgba(255,255,255,0.18);
+            color: rgba(255,255,255,0.8);
+            border-color: rgba(255,255,255,0.15);
         }
 
-        .ecosystem h2 { color: var(--white); }
+        .floor-story h2 { color: var(--white); }
+        .floor-story .section-header p { color: rgba(255,255,255,0.65); }
 
-        .ecosystem .section-header p {
-            color: rgba(255,255,255,0.7);
+        /* Journey path */
+        .journey {
+            max-width: 740px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
         }
 
-        .ecosystem-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(255px, 1fr));
-            gap: 1.25rem;
-            position: relative; z-index: 1;
+        .journey-line {
+            position: absolute;
+            left: 27px;
+            top: 52px;
+            bottom: 52px;
+            width: 2px;
+            background: linear-gradient(to bottom, rgba(45,124,209,0.7), rgba(45,124,209,0.15), transparent);
         }
 
-        .eco-item {
-            background: rgba(255,255,255,0.06);
-            border: 1px solid rgba(255,255,255,0.12);
-            border-radius: var(--r);
-            padding: 1.75rem 1.5rem;
-            transition: background 0.2s ease;
+        @media (min-width: 640px) {
+            .journey-line { left: 35px; }
         }
 
-        .eco-item:hover { background: rgba(255,255,255,0.1); }
+        .journey-step {
+            display: flex;
+            gap: 1.5rem;
+            align-items: flex-start;
+            margin-bottom: 0;
+            padding: 1.5rem 0;
+            position: relative;
+            z-index: 1;
+        }
 
-        .eco-item-head {
+        .journey-step:last-child { border-bottom: none; }
+
+        .journey-num {
+            width: 56px;
+            height: 56px;
+            background: rgba(45,124,209,0.18);
+            border: 1.5px solid rgba(45,124,209,0.45);
+            border-radius: 50%;
             display: flex;
             align-items: center;
-            gap: 0.75rem;
-            margin-bottom: 0.65rem;
-        }
-
-        .eco-icon {
-            font-size: 1.4rem;
-            line-height: 1;
+            justify-content: center;
+            font-size: 1.05rem;
+            font-weight: 800;
+            color: #7ec3f0;
             flex-shrink: 0;
+            letter-spacing: -0.02em;
         }
 
-        .eco-item h3 {
+        @media (min-width: 640px) {
+            .journey-num { width: 72px; height: 72px; font-size: 1.25rem; }
+        }
+
+        .journey-content {
+            padding-top: 0.85rem;
+            flex: 1;
+        }
+
+        @media (min-width: 640px) {
+            .journey-content { padding-top: 1.1rem; }
+        }
+
+        .journey-content h3 {
             color: var(--white);
-            font-size: 1rem;
+            margin-bottom: 0.45rem;
+            font-size: 1.05rem;
         }
 
-        .eco-item p {
-            color: rgba(255,255,255,0.65);
-            font-size: 0.88rem;
-            line-height: 1.65;
+        .journey-content p {
+            color: rgba(255,255,255,0.62);
+            font-size: 0.92rem;
+            line-height: 1.72;
+            margin: 0;
         }
 
         /* ============================================================
-           ANNIVERSARY OFFER
+           MILESTONE / ANNIVERSARY (editorial, not a campaign card)
         ============================================================ */
-        .offer {
-            background: linear-gradient(145deg, var(--green) 0%, #3aac68 100%);
-            color: var(--white);
-            text-align: center;
+        .milestone {
+            background: var(--surface);
             position: relative;
             overflow: hidden;
+            text-align: center;
         }
 
-        .offer::before {
-            content: '';
+        .milestone-watermark {
             position: absolute;
-            bottom: -80px; left: -80px;
-            width: 400px; height: 400px;
-            background: radial-gradient(circle, rgba(255,255,255,0.08) 0%, transparent 70%);
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: clamp(10rem, 28vw, 22rem);
+            font-weight: 800;
+            color: var(--navy);
+            opacity: 0.035;
+            letter-spacing: -0.06em;
+            line-height: 0.9;
             pointer-events: none;
+            user-select: none;
+            white-space: nowrap;
         }
 
-        .offer .section-tag {
-            background: rgba(255,255,255,0.2);
-            color: rgba(255,255,255,0.95);
-            border-color: rgba(255,255,255,0.3);
-        }
-
-        .offer h2 { color: var(--white); }
-
-        .offer .section-header p { color: rgba(255,255,255,0.85); }
-
-        .offer-box {
-            background: rgba(255,255,255,0.12);
-            border: 1px solid rgba(255,255,255,0.25);
-            border-radius: var(--r-lg);
-            padding: 3rem 2.5rem;
-            max-width: 640px;
+        .milestone-inner {
+            position: relative;
+            z-index: 1;
+            max-width: 720px;
             margin: 0 auto;
-            position: relative; z-index: 1;
         }
 
-        @media (max-width: 640px) {
-            .offer-box { padding: 2rem 1.5rem; }
+        .milestone-statement {
+            font-size: clamp(1.5rem, 4vw, 2rem);
+            font-weight: 700;
+            color: var(--navy);
+            line-height: 1.35;
+            letter-spacing: -0.025em;
+            margin-bottom: 1.5rem;
         }
 
-        .offer-body {
-            color: rgba(255,255,255,0.9);
-            font-size: 1rem;
-            line-height: 1.75;
-            margin-bottom: 2rem;
+        .milestone-body {
+            color: var(--ink-mid);
+            font-size: 1.03rem;
+            line-height: 1.85;
+            margin-bottom: 2.5rem;
         }
 
+        .milestone-divider {
+            width: 60px;
+            height: 3px;
+            background: linear-gradient(90deg, var(--blue-light), var(--green));
+            border-radius: 2px;
+            margin: 2rem auto;
+        }
+
+        .milestone-cta-group {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: 1.25rem;
+        }
+
+        .milestone-note {
+            font-size: 0.82rem;
+            color: var(--ink-light);
+        }
+
+        /* Offer email form (simplified) */
         .offer-form {
             display: flex;
             gap: 0.75rem;
-            max-width: 460px;
+            max-width: 440px;
             margin: 0 auto 1rem;
             flex-wrap: wrap;
         }
 
         .offer-input {
             flex: 1;
-            min-width: 200px;
-            padding: 0.875rem 1.25rem;
-            border: 2px solid rgba(255,255,255,0.4);
+            min-width: 180px;
+            padding: 0.85rem 1.25rem;
+            border: 1.5px solid var(--border-mid);
             border-radius: var(--r-sm);
-            background: rgba(255,255,255,0.15);
-            color: var(--white);
+            background: var(--white);
+            color: var(--ink);
             font-family: var(--font);
             font-size: 0.975rem;
             outline: none;
-            transition: border-color 0.18s, background 0.18s;
+            transition: border-color 0.18s;
         }
-
-        .offer-input::placeholder { color: rgba(255,255,255,0.55); }
 
         .offer-input:focus {
-            border-color: rgba(255,255,255,0.8);
-            background: rgba(255,255,255,0.2);
-        }
-
-        .offer-fine {
-            font-size: 0.8rem;
-            color: rgba(255,255,255,0.55);
-            margin-top: 1rem;
+            border-color: var(--blue-light);
+            box-shadow: 0 0 0 3px rgba(45,124,209,0.1);
         }
 
         /* ============================================================
            REFERRAL
         ============================================================ */
         .referral {
-            background: var(--surface);
+            background: var(--white);
             text-align: center;
         }
 
@@ -684,21 +863,22 @@
 
         .referral-lead {
             color: var(--ink-mid);
-            font-size: 1.05rem;
+            font-size: 1.03rem;
             max-width: 560px;
-            margin: 0 auto 2rem;
+            margin: 0 auto 2.25rem;
+            line-height: 1.8;
         }
 
         .share-box {
-            background: var(--white);
+            background: var(--surface);
             border: 1px solid var(--border);
             border-radius: var(--r);
-            padding: 1.25rem 1.5rem;
-            max-width: 580px;
+            padding: 1.5rem 1.75rem;
+            max-width: 620px;
             margin: 0 auto 2.5rem;
             display: flex;
             align-items: center;
-            gap: 1rem;
+            gap: 1.25rem;
             text-align: left;
             flex-wrap: wrap;
         }
@@ -707,7 +887,7 @@
             flex: 1;
             font-size: 0.9rem;
             color: var(--ink-mid);
-            line-height: 1.6;
+            line-height: 1.65;
             font-style: italic;
             min-width: 200px;
         }
@@ -733,10 +913,10 @@
         /* ============================================================
            FAQ
         ============================================================ */
-        .faq { background: var(--white); }
+        .faq { background: var(--surface); }
 
         .faq-list {
-            max-width: 760px;
+            max-width: 780px;
             margin: 0 auto;
         }
 
@@ -754,7 +934,7 @@
             justify-content: space-between;
             align-items: center;
             gap: 1.25rem;
-            padding: 1.35rem 0;
+            padding: 1.4rem 0;
             font-family: var(--font);
             font-size: 1rem;
             font-weight: 600;
@@ -769,14 +949,14 @@
 
         .faq-chevron {
             flex-shrink: 0;
-            width: 26px;
-            height: 26px;
+            width: 28px;
+            height: 28px;
             border-radius: 50%;
             background: var(--surface-mid);
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 1.1rem;
+            font-size: 1.15rem;
             color: var(--blue-light);
             transition: transform 0.25s ease, background 0.15s;
             line-height: 1;
@@ -784,7 +964,7 @@
 
         .faq-item.open .faq-chevron {
             transform: rotate(45deg);
-            background: rgba(45,124,209,0.1);
+            background: var(--blue-pale);
         }
 
         .faq-a {
@@ -792,7 +972,7 @@
             padding-bottom: 1.5rem;
             color: var(--ink-mid);
             font-size: 0.97rem;
-            line-height: 1.8;
+            line-height: 1.82;
             padding-right: 3rem;
         }
 
@@ -802,23 +982,39 @@
            FOOTER CTA
         ============================================================ */
         .footer-cta {
-            background: linear-gradient(145deg, var(--navy-mid) 0%, var(--navy) 100%);
+            background: linear-gradient(160deg, var(--navy-deep) 0%, var(--navy) 60%, var(--navy-mid) 100%);
             color: var(--white);
             text-align: center;
-            padding: clamp(4rem, 10vw, 6rem) 0;
+            padding: clamp(4.5rem, 11vw, 7rem) 0;
+            position: relative;
+            overflow: hidden;
         }
+
+        .footer-cta::before {
+            content: '';
+            position: absolute;
+            top: 50%; left: 50%;
+            transform: translate(-50%, -50%);
+            width: 900px; height: 500px;
+            background: radial-gradient(ellipse, rgba(45,124,209,0.09) 0%, transparent 65%);
+            pointer-events: none;
+        }
+
+        .footer-cta-inner { position: relative; z-index: 1; }
 
         .footer-cta h2 {
             color: var(--white);
             margin-bottom: 1rem;
-            font-size: clamp(1.6rem, 4vw, 2.3rem);
+            font-size: clamp(1.7rem, 4.5vw, 2.5rem);
+            letter-spacing: -0.03em;
         }
 
         .footer-cta p {
-            color: rgba(255,255,255,0.8);
-            max-width: 500px;
-            margin: 0 auto 2.5rem;
+            color: rgba(255,255,255,0.7);
+            max-width: 480px;
+            margin: 0 auto 2.75rem;
             font-size: 1.05rem;
+            line-height: 1.8;
         }
 
         .footer-cta-buttons {
@@ -826,6 +1022,21 @@
             gap: 1rem;
             justify-content: center;
             flex-wrap: wrap;
+        }
+
+        .footer-contact-detail {
+            margin-top: 2.5rem;
+            font-size: 0.88rem;
+            color: rgba(255,255,255,0.45);
+        }
+
+        .footer-contact-detail a {
+            color: rgba(255,255,255,0.6);
+            text-decoration: none;
+        }
+
+        .footer-contact-detail a:hover {
+            color: rgba(255,255,255,0.9);
         }
 
         /* ============================================================
@@ -848,32 +1059,33 @@
         @media (min-width: 960px) { .footer-grid { grid-template-columns: 2fr 1fr 1fr 1fr; gap: 3rem; } }
 
         .footer-col h4 {
-            color: rgba(255,255,255,0.9);
-            font-size: 0.8rem;
+            color: rgba(255,255,255,0.85);
+            font-size: 0.78rem;
             font-weight: 600;
             text-transform: uppercase;
-            letter-spacing: 0.08em;
+            letter-spacing: 0.09em;
             margin-bottom: 1.25rem;
         }
 
         .footer-col p, .footer-col a {
-            color: rgba(255,255,255,0.5);
+            color: rgba(255,255,255,0.45);
             font-size: 0.9rem;
-            line-height: 1.9;
+            line-height: 1.95;
         }
 
-        .footer-col a:hover { color: rgba(255,255,255,0.9); text-decoration: none; }
+        .footer-col a:hover { color: rgba(255,255,255,0.85); text-decoration: none; }
 
         .footer-wordmark {
             font-size: 1.3rem;
             font-weight: 800;
             color: var(--white);
             letter-spacing: -0.03em;
-            margin-bottom: 0.75rem;
+            margin-bottom: 0.85rem;
+            line-height: 1;
         }
 
         .footer-bottom {
-            border-top: 1px solid rgba(255,255,255,0.08);
+            border-top: 1px solid rgba(255,255,255,0.07);
             padding-top: 1.75rem;
             display: flex;
             flex-direction: column;
@@ -886,7 +1098,7 @@
             .footer-bottom { flex-direction: row; justify-content: space-between; text-align: left; }
         }
 
-        .footer-bottom p { color: rgba(255,255,255,0.3); font-size: 0.82rem; margin: 0; }
+        .footer-bottom p { color: rgba(255,255,255,0.25); font-size: 0.82rem; margin: 0; }
 
         /* ============================================================
            COPY BUTTON FEEDBACK
@@ -912,17 +1124,17 @@
     ============================================================ -->
     <header>
         <nav>
-            <a href="#" class="logo" style="text-decoration:none;">
+            <a href="#" class="logo">
                 <span class="logo-name">Valvekliinik</span>
-                <span class="logo-sub">Sepapaja 12/1, Ülemiste Tervisemaja 2</span>
+                <span class="logo-sub">Sepapaja 12/1 · 3. korrus · Tallinn</span>
             </a>
             <div class="nav-links">
                 <a href="#miks">Miks meie</a>
                 <a href="#teenused">Teenused</a>
-                <a href="#hoone">Üks hoone</a>
-                <a href="#pakkumine">Sünnipäev</a>
+                <a href="#kolmas-korrus">Kolmas korrus</a>
+                <a href="#juubel">Juubeliaasta</a>
                 <a href="#kkk">KKK</a>
-                <a href="tel:[TELEFON]" class="nav-cta">Helista</a>
+                <a href="tel:+37259110909" class="nav-cta">Helista</a>
             </div>
         </nav>
     </header>
@@ -935,22 +1147,24 @@
         <div class="container hero-inner">
 
             <div class="hero-badge">
-                <span>🎉</span>
-                <span>2016 &ndash; 2026 &middot; Kümme aastat</span>
+                <span class="hero-badge-dot"></span>
+                <span>2016 · 2026 · Kümme aastat</span>
             </div>
 
             <h1>
-                10 aastat.<br>
-                <span>Üks koht. Kogu vastus.</span>
+                Alati kohal.<br>
+                <em>Kümme aastat järjest.</em>
             </h1>
 
             <p class="hero-sub">
-                Valvekliinik tähistab 2026. aastal oma kümnendat sünnipäeva. Kümme aastat kiiret, asjatundlikku ja inimlikku arstiabi Tallinna südames. Täname iga patsienti, kes on meisse usaldanud kõige olulisemat.
+                Haigestuda on piisavalt raske. Esimene küsimus ei peaks olema: kuhu ma nüüd lähen?<br>
+                Sepapaja 12/1 kolmandal korrusel ootab <strong>vastuvõtt, labor ja eriarstid</strong>
+                samal päeval, ühe käiguga. Kümme aastat on see nii töötanud.
             </p>
 
             <div class="hero-buttons">
-                <a href="tel:[TELEFON]" class="btn">Broneeri vastuvõtt</a>
-                <a href="#teenused" class="btn btn-outline">Vaata teenuseid</a>
+                <a href="tel:+37259110909" class="btn">Broneeri vastuvõtt</a>
+                <a href="tel:+37259110909" class="btn btn-tel">+372 5 911 0909</a>
             </div>
 
         </div>
@@ -964,20 +1178,20 @@
         <div class="container" style="padding:0; max-width:1160px;">
             <div class="trust-strip-inner">
                 <div class="trust-stat">
-                    <strong>2016</strong>
-                    <span>Asutatud</span>
-                </div>
-                <div class="trust-stat">
                     <strong>10</strong>
-                    <span>Aastat kogemust</span>
-                </div>
-                <div class="trust-stat">
-                    <strong>5+</strong>
-                    <span>Eriala ühes hoones</span>
+                    <span>Aastat Ülemiste<br>Tervisemajas</span>
                 </div>
                 <div class="trust-stat">
                     <strong>7</strong>
-                    <span>Päeva nädalas avatud</span>
+                    <span>Päeva nädalas<br>avatud</span>
+                </div>
+                <div class="trust-stat">
+                    <strong>5+</strong>
+                    <span>Eriala ühel<br>korrusel</span>
+                </div>
+                <div class="trust-stat">
+                    <strong>2016</strong>
+                    <span>Asutamis&shy;aasta</span>
                 </div>
             </div>
         </div>
@@ -985,39 +1199,59 @@
 
 
     <!-- ============================================================
-         WHY VALVEKLIINIK — 3 PILLARS
+         PHILOSOPHY / WHY SECTION
     ============================================================ -->
-    <section class="pillars" id="miks">
+    <section class="philosophy" id="miks">
         <div class="container">
+            <div class="philosophy-inner">
 
-            <div class="section-header">
-                <span class="section-tag">Miks Valvekliinik</span>
-                <h2>Kiirus ja kompetents ei pea olema vastandid</h2>
-                <p>Valvekliinik on kümne aasta jooksul tõestanud, et saab mõlemat korraga. Meie kliinik Ülemiste Tervisemajas pakub kõike, mida tervise eest hoolitsemiseks vajad, ühel korrusel, lühikese ooteajaga.</p>
+                <div class="philosophy-left">
+                    <span class="section-tag">Meie põhimõte</span>
+                    <p class="philosophy-statement">
+                        Arstiabi ei peaks olema logistikaülesanne.
+                    </p>
+                    <div class="philosophy-body">
+                        <p>
+                            Haigestuda on juba piisavalt raske. Ei ole mõtet kulutada energiat sellele, et välja selgitada, kuhu minna, millal labor töötab ja kas eriarst mahub nädalasse sisse.
+                        </p>
+                        <p>
+                            Valvekliinik asutati 2016. aastal selle mure kaotamiseks. Erakorraline vastuvõtt, esmatasand, labor ja eriarstid töötavad samas majas, samal korrusel, ühe meeskonnana. Alates esimesest päevast struktuuris sees, mitte lisateenusena.
+                        </p>
+                        <p>
+                            Kümme aastat on see mudel töötanud. See töötab täna.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="philosophy-right">
+
+                    <div class="phil-point">
+                        <div class="phil-icon">⏱</div>
+                        <div class="phil-text">
+                            <h4>Arst samal päeval</h4>
+                            <p>Enamik patsiente näeb arsti samal päeval. Erakorralistel juhtudel vastuvõtt kohe, ilma eelregistreerimiseta.</p>
+                        </div>
+                    </div>
+
+                    <div class="phil-point">
+                        <div class="phil-icon">🔬</div>
+                        <div class="phil-text">
+                            <h4>Tulemused kohapeal</h4>
+                            <p>Labor, diagnostika ja vastuvõtt asuvad ühel korrusel. Analüüside tulemused jõuavad sageli tagasi samal külastusel.</p>
+                        </div>
+                    </div>
+
+                    <div class="phil-point">
+                        <div class="phil-icon">🗺</div>
+                        <div class="phil-text">
+                            <h4>Järgmine samm on korraldatud</h4>
+                            <p>Vajad spetsialisti? Ta on samas majas. Suunamine juhtub koheselt, ilma kuuenädalase ooteajata.</p>
+                        </div>
+                    </div>
+
+                </div>
+
             </div>
-
-            <div class="pillars-grid">
-
-                <div class="pillar">
-                    <span class="pillar-icon">👩‍⚕️</span>
-                    <h3>Kogenud meeskond</h3>
-                    <p>Meie arstid ja õed on läbinud põhjaliku väljaõppe ning töötavad igapäevaselt erakorralise meditsiini ja esmatasandi arstiabi ristumiskohal.</p>
-                </div>
-
-                <div class="pillar">
-                    <span class="pillar-icon">⏱</span>
-                    <h3>Lühike ooteaeg</h3>
-                    <p>Enamik patsiente näeb arsti samal päeval. Erakorralistel juhtudel ka kohe. Me ei lase tervisemurel pikaks venida.</p>
-                </div>
-
-                <div class="pillar">
-                    <span class="pillar-icon">🏥</span>
-                    <h3>Üks katuse all</h3>
-                    <p>Vastuvõtt, diagnostika, protseduurid ja konsultatsioonid asuvad samas hoones. Kui perearst suunab edasi, on spetsialist samas koridoris.</p>
-                </div>
-
-            </div>
-
         </div>
     </section>
 
@@ -1030,45 +1264,45 @@
 
             <div class="section-header">
                 <span class="section-tag">Meie teenused</span>
-                <h2>Kõik, mida vajad, ühel korrusel</h2>
-                <p>Ülemiste Tervisemaja 2 on midagi enamat kui kliinik. Siin töötab koos terve ökosüsteem, kus erinevad erialad täiendavad teineteist loomulikult.</p>
+                <h2>Kõik vajalik on koos</h2>
+                <p>Erakorraline vastuvõtt, perearst, labor ja eriarstid ühel korrusel. Samal päeval, ühe käiguga.</p>
             </div>
 
             <div class="services-grid">
 
                 <article class="service-card">
-                    <span class="service-icon">🚑</span>
+                    <span class="service-icon">🩺</span>
                     <h3>Erakorraline vastuvõtt</h3>
-                    <p>Erakorraline vastuvõtt, haavade ravi, vigastused, äge haigus, infusioonravi. Avatud laial tööajal, vastuvõtt ka ilma eelregistreerimiseta.</p>
-                    <a href="tel:[TELEFON]" class="service-link">Tule kohale &rarr;</a>
+                    <p>Äge haigus, vigastus, haavahooldus, infusioonravi. Töötame laiendatud lahtiolekuaegadega, ka nädalavahetustel. Eelregistreerimine ei ole nõutav.</p>
+                    <a href="tel:+37259110909" class="service-link">Tule kohale &rarr;</a>
                 </article>
 
                 <article class="service-card">
                     <span class="service-icon">👨‍👩‍👧</span>
-                    <h3>Perekliinik &middot; Esmatasand</h3>
-                    <p>Perearstiteenused, krooniliste haiguste jälgimine, tervisekontrollid, vaktsineerimised ja suunamised eriarstile.</p>
-                    <a href="tel:[TELEFON]" class="service-link">Broneeri aeg &rarr;</a>
+                    <h3>Perekliinik</h3>
+                    <p>Perearstiteenused, krooniliste haiguste jälgimine, tervisekontrollid ja vaktsineerimised. Planeeritud vastuvõttude jaoks soovitame aega broneerida.</p>
+                    <a href="tel:+37259110909" class="service-link">Broneeri aeg &rarr;</a>
                 </article>
 
                 <article class="service-card">
                     <span class="service-icon">🧪</span>
                     <h3>Laboriteenus</h3>
-                    <p>Vere- ja uriinianalüüsid, biomarkerite jälgimine, tulemused kiiresti. Analüüse saab tellida otse, ilma arsti suunamiseta.</p>
-                    <a href="tel:[TELEFON]" class="service-link">Küsi lisainfot &rarr;</a>
+                    <p>Vere- ja uriinianalüüsid, biomarkerite jälgimine. Tulemused kiiresti. Paljusid analüüse saab tellida otse, arsti suunamiseta.</p>
+                    <a href="tel:+37259110909" class="service-link">Küsi lisainfot &rarr;</a>
                 </article>
 
                 <article class="service-card">
-                    <span class="service-icon">🩺</span>
+                    <span class="service-icon">📊</span>
                     <h3>Diagnostika</h3>
-                    <p>EKG, spiromeetria, haavahooldus ja muud kliinilised protseduurid kohapeal. Vajalik varustus on alati käepärast.</p>
-                    <a href="tel:[TELEFON]" class="service-link">Vaata võimalusi &rarr;</a>
+                    <p>EKG, spiromeetria, haavahooldus ja kliinilised protseduurid kohapeal. Vajalik varustus on alati käepärast, tulemused kohe.</p>
+                    <a href="tel:+37259110909" class="service-link">Vaata võimalusi &rarr;</a>
                 </article>
 
                 <article class="service-card">
-                    <span class="service-icon">🔬</span>
-                    <h3>Konsultatsioonid eriarstidega</h3>
-                    <p>Valik erialaspetsialiste ühes hoones. Vajaduse korral saame korraldada kiire edasisuunamise ilma pikaajalise ooteta.</p>
-                    <a href="tel:[TELEFON]" class="service-link">Uuri avasid &rarr;</a>
+                    <span class="service-icon">👨‍⚕️</span>
+                    <h3>Eriarstide konsultatsioonid</h3>
+                    <p>Valik spetsialiste ühes hoones. Suunamine juhtub kohe, mitte kuue nädala pärast. Küsi registratuurist, kes parasjagu saadaval on.</p>
+                    <a href="tel:+37259110909" class="service-link">Uuri avasid &rarr;</a>
                 </article>
 
             </div>
@@ -1078,65 +1312,58 @@
 
 
     <!-- ============================================================
-         ECOSYSTEM / SAME BUILDING
+         FLOOR STORY (patient journey, replaces card grid)
     ============================================================ -->
-    <section class="ecosystem" id="hoone">
+    <section class="floor-story" id="kolmas-korrus">
         <div class="container">
 
             <div class="section-header">
-                <span class="section-tag">Ülemiste Tervisemaja</span>
-                <h2>Kõik olulised teenused ühes kohas</h2>
-                <p>Maja on midagi enamat kui aadress. Ülemiste Tervisemajas töötab koos meditsiiniline ökosüsteem, kus erinevad spetsialistid on naabrid.</p>
+                <span class="section-tag">Sepapaja 12/1 · 3. korrus</span>
+                <h2>Üks käik. Kõik laheneb.</h2>
+                <p>Nii näeb välja üks tavaline käik kolmandale korrusele. Oled õiges kohas.</p>
             </div>
 
-            <div class="ecosystem-grid">
+            <div class="journey">
+                <div class="journey-line" aria-hidden="true"></div>
 
-                <div class="eco-item">
-                    <div class="eco-item-head">
-                        <span class="eco-icon">🚑</span>
-                        <h3>Valvekliinik</h3>
+                <div class="journey-step">
+                    <div class="journey-num">1</div>
+                    <div class="journey-content">
+                        <h3>Tuled sisse</h3>
+                        <p>Registratuur on kohe sissepääsu juures. Erakorralise vastuvõtu puhul eelregistreerimine ei ole vajalik. Tule, siin on koht, kuhu tulla.</p>
                     </div>
-                    <p>Erakorraline vastuvõtt, infusioonravi ja haavahooldus. Avatud laial tööajal, ka nädalavahetustel.</p>
                 </div>
 
-                <div class="eco-item">
-                    <div class="eco-item-head">
-                        <span class="eco-icon">🏥</span>
-                        <h3>Perekliinik</h3>
+                <div class="journey-step">
+                    <div class="journey-num">2</div>
+                    <div class="journey-content">
+                        <h3>Vastuvõtt samal käigul</h3>
+                        <p>Arst on saadaval. Enamik patsiente näeb arsti samal päeval. Erakorralise vastuvõtu puhul ootame teid ka ilma eelneva broneeringuta.</p>
                     </div>
-                    <p>Perearstid, krooniliste haiguste jälgimine, tervisekontrollid ja suunamised. Esmatasand samas koridoris.</p>
                 </div>
 
-                <div class="eco-item">
-                    <div class="eco-item-head">
-                        <span class="eco-icon">🧬</span>
-                        <h3>Laboriteenus</h3>
+                <div class="journey-step">
+                    <div class="journey-num">3</div>
+                    <div class="journey-content">
+                        <h3>Labor on astuda juurde</h3>
+                        <p>Kui arst suunab analüüsidele, ei pea te kuhugi sõitma. Labor asub samal korrusel. Tulemused jõuavad sageli tagasi samal külastusel.</p>
                     </div>
-                    <p>Analüüsid samalt korruselt. Tulemused kiiresti, sageli juba vastuvõtu ajaks.</p>
                 </div>
 
-                <div class="eco-item">
-                    <div class="eco-item-head">
-                        <span class="eco-icon">📋</span>
-                        <h3>Eriarstide konsultatsioonid</h3>
+                <div class="journey-step">
+                    <div class="journey-num">4</div>
+                    <div class="journey-content">
+                        <h3>Eriarst on samas hoones</h3>
+                        <p>Vajaduse korral korraldame konsultatsiooni eriarstiga samas majas. Suunamine juhtub koheselt, mitte kuue nädala pärast.</p>
                     </div>
-                    <p>Valik spetsialiste ühes majas. Edasisuunamine ilma pikaajalise ooteta.</p>
                 </div>
 
-                <div class="eco-item">
-                    <div class="eco-item-head">
-                        <span class="eco-icon">🚗</span>
-                        <h3>Parkimine</h3>
+                <div class="journey-step">
+                    <div class="journey-num">5</div>
+                    <div class="journey-content">
+                        <h3>Lahkud lahendusega</h3>
+                        <p>Ravi, retsept, järgmised sammud. Kogu pilt on selge. Ei uut järjekorda, ei kuuenädalast ooteaega. Ühe käiguga.</p>
                     </div>
-                    <p>Parkimine on maja juures võimalik. Ülemiste City pakub mitmeid parkimisvõimalusi.</p>
-                </div>
-
-                <div class="eco-item">
-                    <div class="eco-item-head">
-                        <span class="eco-icon">🚌</span>
-                        <h3>Ühistransport</h3>
-                    </div>
-                    <p>Maja on hästi ligipääsetav nii autoga kui ka ühistranspordiga. Ülemiste terminal jalutuskäigu kaugusel.</p>
                 </div>
 
             </div>
@@ -1146,23 +1373,38 @@
 
 
     <!-- ============================================================
-         ANNIVERSARY OFFER
+         MILESTONE / ANNIVERSARY
     ============================================================ -->
-    <section class="offer" id="pakkumine">
+    <section class="milestone" id="juubel">
+        <div class="milestone-watermark" aria-hidden="true">10</div>
         <div class="container">
+            <div class="milestone-inner">
 
-            <div class="section-header">
-                <span class="section-tag">10. sünnipäev</span>
-                <h2>Kümne aasta tänuks</h2>
-                <p>Oktoobrist novembrini 2026 pakume patsientidele eripakkumist kümne aasta tähistamiseks. Ole esimeste seas, kes seda teada saab.</p>
-            </div>
+                <span class="section-tag" style="background:rgba(13,45,79,0.07);color:var(--navy);border-color:rgba(13,45,79,0.15);">2026 · Juubeliaasta</span>
 
-            <div class="offer-box">
-                <p class="offer-body">
-                    Pakkumise detailid avalikustame peagi. See on suunatud nii uutele tulijatele kui ka pikaajalistele patsientidele, kes on meiega algusest saati kaasas olnud. Jäta oma e-posti aadress ja saadame sulle pakkumise esimesena.
+                <p class="milestone-statement">
+                    Kümme aastat tagasi asusime täitma lünka,<br>
+                    mis ei oleks pidanud olema. See lünk on endiselt täidetud.
                 </p>
 
-                <form class="offer-form" onsubmit="handleOfferForm(event)">
+                <div class="milestone-divider"></div>
+
+                <p class="milestone-body">
+                    Valvekliinik alustas 2016. aastal ühe küsimusega: miks peab tallinnlane arsti juurde jõudmiseks kahte kohta sõitma ja labor kolmandas kohas tegema? Kümnendal aastal töötab sama meeskond samades ruumides sama põhimõttega. Meeskond on kasvanud. Võimekus on laienenud. Põhimõte on sama.
+                    <br><br>
+                    Juubeliaastal täname oma patsiente kõige lihtsamal viisil: oleme kohal.
+                </p>
+
+                <div class="milestone-cta-group">
+                    <a href="tel:+37259110909" class="btn">Broneeri vastuvõtt</a>
+                    <a href="mailto:info@valvekliinik.ee" class="btn btn-ghost">Kirjuta meile</a>
+                </div>
+
+                <p class="milestone-note">
+                    Oktoobris 2026 toob juubeliaasta midagi konkreetset. Jäta oma e-posti aadress ja saad esimeste seas teada.
+                </p>
+
+                <form class="offer-form" onsubmit="handleOfferForm(event)" style="margin-top:1.25rem;">
                     <input
                         type="email"
                         class="offer-input"
@@ -1171,12 +1413,11 @@
                         autocomplete="email"
                         aria-label="E-posti aadress"
                     >
-                    <button type="submit" class="btn">Teavita mind</button>
+                    <button type="submit" class="btn btn-blue">Teavita mind</button>
                 </form>
+                <p class="milestone-note">Ainult olulised uudised. Rämpsposti me ei saada.</p>
 
-                <p class="offer-fine">Me ei saada rämpsposti. Ainult see, mida tõeliselt lubame.</p>
             </div>
-
         </div>
     </section>
 
@@ -1187,18 +1428,18 @@
     <section class="referral">
         <div class="container">
 
-            <span class="section-tag" style="margin-bottom:1.25rem;">Soovita sõbrale</span>
-            <h2>Tunned kedagi, kes vajab head arsti?</h2>
+            <span class="section-tag" style="margin-bottom:1.25rem;">Soovita</span>
+            <h2>Hea arst on väärt soovitamist.</h2>
             <p class="referral-lead">
-                Parim kompliment on soovitus. Kui Valvekliinik on aidanud sind või su perekonda, jaga seda infot inimestega, kellest sa hoolid.
+                Kui Valvekliinik on aidanud sind või su lähedasi, on kõige loomulikum tänu jagada seda infot inimestega, kes usaldusväärset arstiabi otsivad.
             </p>
 
             <div class="share-box">
                 <p class="share-text" id="shareText">
-                    "Valvekliinik Ülemiste Tervisemajas on 10 aastat tegutsenud erakliinik, kus arsti juurde pääseb kiiresti ja töö on põhjalik. Soovitan vaadata: valvekliinik.ee"
+                    "Valvekliinik Ülemiste Tervisemajas on kümme aastat tegutsenud erakorralise meditsiini kliinik, kus arsti juurde pääseb kiiresti ja kogu vajalik on ühes majas. Soovitan: valvekliinik.ee"
                 </p>
                 <button class="btn btn-sm btn-blue" id="copyBtn" onclick="copyShareText()">
-                    Kopeeri link
+                    Kopeeri tekst
                 </button>
             </div>
 
@@ -1206,16 +1447,15 @@
                 <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fvalvekliinik.ee%2F10" class="btn btn-blue" target="_blank" rel="noopener noreferrer">
                     Jaga Facebookis
                 </a>
-                <a href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fvalvekliinik.ee%2F10" class="btn btn-blue" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fvalvekliinik.ee%2F10" class="btn btn-ghost" target="_blank" rel="noopener noreferrer">
                     Jaga LinkedInis
                 </a>
             </div>
 
             <p class="social-line">
                 Jälgi meid:
-                <a href="[FACEBOOK_LEHT]" target="_blank" rel="noopener">Facebook</a> &middot;
-                <a href="[INSTAGRAM_LEHT]" target="_blank" rel="noopener">Instagram</a> &middot;
-                <a href="[LINKEDIN_LEHT]" target="_blank" rel="noopener">LinkedIn</a>
+                <a href="https://www.facebook.com/valvekliinik" target="_blank" rel="noopener">Facebook</a> &middot;
+                <a href="https://www.instagram.com/valvekliinik" target="_blank" rel="noopener">Instagram</a>
             </p>
 
         </div>
@@ -1229,9 +1469,9 @@
         <div class="container">
 
             <div class="section-header">
-                <span class="section-tag">KKK</span>
-                <h2>Küsimused ja vastused</h2>
-                <p>Vastust ei leidnud? Helista meile ja vastame kohe.</p>
+                <span class="section-tag">Küsimused</span>
+                <h2>Korduma kippuvad küsimused</h2>
+                <p>Vastust ei leidnud? Helista meile ja vastame kohe: <a href="tel:+37259110909" style="color:var(--blue-light);font-weight:600;">+372 5 911 0909</a></p>
             </div>
 
             <ul class="faq-list" role="list">
@@ -1242,7 +1482,7 @@
                         <span class="faq-chevron" aria-hidden="true">+</span>
                     </button>
                     <div class="faq-a" role="region">
-                        Erakorraliseks vastuvõtuks ei ole registreerimine vajalik, tule kohale. Planeeritud vastuvõttudeks soovitame registreeruda telefoni või veebibroneeringu kaudu, et tagada sobiv aeg ilma ooteta.
+                        Erakorraliseks vastuvõtuks ei ole registreerimine nõutav, tule kohale. Planeeritud vastuvõttudeks soovitame broneerida telefoni teel, et tagada sobiv vastuvõtuaeg ilma ooteta.
                     </div>
                 </li>
 
@@ -1252,7 +1492,7 @@
                         <span class="faq-chevron" aria-hidden="true">+</span>
                     </button>
                     <div class="faq-a" role="region">
-                        Valvekliinik on spetsialiseerunud kiiretele vastuvõttudele ja erakorralistele olukordadele. Töötame laiendatud lahtiolekuaegadega ja meil on kohal vahendid, mida tavavastuvõtus ei leidu, näiteks infusioonravi ja haavahooldus.
+                        Valvekliinik on spetsialiseerunud kiiretele vastuvõttudele ja erakorralistele olukordadele. Töötame laiendatud lahtiolekuaegadega ja meil on kohapeal vahendid, mida tavapraksises ei leidu: infusioonravi, haavahooldus, kohene diagnostika. Ning labor ja eriarstid on samas hoones.
                     </div>
                 </li>
 
@@ -1262,7 +1502,7 @@
                         <span class="faq-chevron" aria-hidden="true">+</span>
                     </button>
                     <div class="faq-a" role="region">
-                        Jah, võtame vastu nii lapsi kui ka täiskasvanuid. Täpse vanusepiirangu ning laste erivaatuste info saad meie registratuurist.
+                        Jah, võtame vastu nii lapsi kui ka täiskasvanuid. Täpse teabe laste vastuvõtu tingimuste kohta saad meie registratuurist.
                     </div>
                 </li>
 
@@ -1272,7 +1512,7 @@
                         <span class="faq-chevron" aria-hidden="true">+</span>
                     </button>
                     <div class="faq-a" role="region">
-                        Jah. Paljusid analüüse saab tellida otse laboriteeenuse kaudu ilma arsti suunamiseta. Täpse loendi leiad meie kodulehelt või saad küsida registratuurist.
+                        Jah. Paljusid analüüse saab tellida otse labori kaudu ilma arsti suunamiseta. Täpse loendi saad registratuurist.
                     </div>
                 </li>
 
@@ -1282,7 +1522,7 @@
                         <span class="faq-chevron" aria-hidden="true">+</span>
                     </button>
                     <div class="faq-a" role="region">
-                        Ajakohased lahtiolekuajad leiad meie kodulehelt valvekliinik.ee. Oleme avatud ka nädalavahetustel.
+                        Oleme avatud seitse päeva nädalas. Ajakohased lahtiolekuajad leiad meie kodulehelt <a href="https://valvekliinik.ee" target="_blank" rel="noopener">valvekliinik.ee</a> või küsi registratuurist.
                     </div>
                 </li>
 
@@ -1292,7 +1532,7 @@
                         <span class="faq-chevron" aria-hidden="true">+</span>
                     </button>
                     <div class="faq-a" role="region">
-                        Asume Ülemiste Tervisemaja 2 hoones aadressil Sepapaja 12/1, Tallinn. Maja on hästi ligipääsetav nii autoga kui ühistranspordiga. Parkimine on kohapeal võimalik.
+                        Asume Ülemiste Tervisemaja 2 kolmandal korrusel aadressil Sepapaja 12/1, Tallinn. Maja on hästi ligipääsetav nii autoga kui ka ühistranspordiga. Ülemiste terminal on jalutuskäigu kaugusel.
                     </div>
                 </li>
 
@@ -1306,13 +1546,17 @@
          FOOTER CTA
     ============================================================ -->
     <section class="footer-cta">
-        <div class="container">
-            <h2>Kümmend aastat hiljem, ikkagi sinu kõrval.</h2>
-            <p>Broneeri vastuvõtt täna ja veendu ise, miks tuhandeid tallinnlasi valib just Valvekliiniku.</p>
+        <div class="container footer-cta-inner">
+            <h2>Vastuvõtt on saadaval. Täna ka.</h2>
+            <p>Kümme aastat on Valvekliinik olnud kohal, kui on vaja. Tule kohale või broneeri aeg. Siin on koht, kuhu tulla.</p>
             <div class="footer-cta-buttons">
-                <a href="tel:[TELEFON]" class="btn">Helista meile</a>
-                <a href="[BRONEERINGU_URL]" class="btn btn-outline">Broneeri veebis</a>
+                <a href="tel:+37259110909" class="btn">Helista: +372 5 911 0909</a>
+                <a href="mailto:info@valvekliinik.ee" class="btn btn-outline">info@valvekliinik.ee</a>
             </div>
+            <p class="footer-contact-detail">
+                Sepapaja 12/1, 3. korrus &middot; Ülemiste Tervisemaja &middot; Tallinn &middot;
+                <a href="https://valvekliinik.ee" target="_blank" rel="noopener">valvekliinik.ee</a>
+            </p>
         </div>
     </section>
 
@@ -1332,13 +1576,12 @@
                 <div class="footer-col">
                     <h4>Kontakt</h4>
                     <p>
-                        <a href="tel:[TELEFON]">[TELEFON]</a><br>
-                        <a href="mailto:[EPOST]">[EPOST]</a><br>
-                        Sepapaja 12/1, 3. korrus<br>
-                        Ülemiste Tervisemaja, Tallinn<br>
-                        <a href="https://valvekliinik.ee" target="_blank" rel="noopener">valvekliinik.ee</a><br>
                         <a href="tel:+37259110909">+372 5 911 0909</a><br>
-                        <a href="mailto:info@valvekliinik.ee">info@valvekliinik.ee</a>
+                        <a href="mailto:info@valvekliinik.ee">info@valvekliinik.ee</a><br>
+                        Sepapaja 12/1, 3. korrus<br>
+                        Ülemiste Tervisemaja<br>
+                        Tallinn 11415<br>
+                        <a href="https://valvekliinik.ee" target="_blank" rel="noopener">valvekliinik.ee</a>
                     </p>
                 </div>
 
@@ -1356,17 +1599,16 @@
                 <div class="footer-col">
                     <h4>Lahtiolekuajad</h4>
                     <p>
-                        [E-R lahtiolekuajad]<br>
-                        [Laupäev]<br>
-                        [Pühapäev]<br>
-                        [Riiklikud pühad]
+                        Avatud 7 päeva nädalas.<br>
+                        Ajakohased ajad:<br>
+                        <a href="https://valvekliinik.ee" target="_blank" rel="noopener">valvekliinik.ee</a>
                     </p>
                 </div>
 
             </div>
 
             <div class="footer-bottom">
-                <p>&copy; 2016&ndash;2026 Valvekliinik. Sentifoli &amp; Lindström OÜ tervishoiukeskuse osa.</p>
+                <p>&copy; 2016&ndash;2026 Valvekliinik. Osa Lindströmi meditsiiniperekonnast.</p>
                 <p>Kõik õigused kaitstud.</p>
             </div>
         </div>
@@ -1405,12 +1647,11 @@
                     btn.textContent = 'Kopeeritud!';
                     btn.classList.add('btn-copied');
                     setTimeout(function() {
-                        btn.textContent = 'Kopeeri link';
+                        btn.textContent = 'Kopeeri tekst';
                         btn.classList.remove('btn-copied');
                     }, 2200);
                 });
             } else {
-                // Fallback for older browsers
                 var ta = document.createElement('textarea');
                 ta.value = text;
                 ta.style.position = 'fixed';
@@ -1423,23 +1664,22 @@
                 btn.textContent = 'Kopeeritud!';
                 btn.classList.add('btn-copied');
                 setTimeout(function() {
-                    btn.textContent = 'Kopeeri link';
+                    btn.textContent = 'Kopeeri tekst';
                     btn.classList.remove('btn-copied');
                 }, 2200);
             }
         }
 
-        // Offer form (placeholder handler)
+        // Offer form placeholder handler
         function handleOfferForm(e) {
             e.preventDefault();
             var input = e.target.querySelector('input[type="email"]');
             var btn = e.target.querySelector('button[type="submit"]');
-            var email = input.value;
-            // TODO: wire to real endpoint or email service
+            // TODO: wire to real email service endpoint
             btn.textContent = 'Registreeritud!';
             btn.disabled = true;
             input.value = '';
-            input.placeholder = 'Aitäh! Anname sulle teada.';
+            input.placeholder = 'Aitah! Anname esimesena teada.';
         }
     </script>
 
