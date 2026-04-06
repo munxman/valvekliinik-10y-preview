@@ -1710,16 +1710,54 @@
             els.forEach(function(el) { el.classList.add('fade-in'); obs.observe(el); });
         })();
 
-        // Offer form placeholder handler
+        // Offer form handler — wired to FormSubmit AJAX endpoint
         function handleOfferForm(e) {
             e.preventDefault();
-            var input = e.target.querySelector('input[type="email"]');
-            var btn = e.target.querySelector('button[type="submit"]');
-            // TODO: wire to real email service endpoint
-            btn.textContent = 'Registreeritud!';
+            var form = e.target;
+            var input = form.querySelector('input[type="email"]');
+            var btn = form.querySelector('button[type="submit"]');
+            var email = input.value.trim();
+
+            if (!email) return;
+
+            // Disable button during submission
+            var originalText = btn.textContent;
+            btn.textContent = 'Saadan…';
             btn.disabled = true;
-            input.value = '';
-            input.placeholder = 'Aitah! Anname esimesena teada.';
+
+            fetch('https://formsubmit.co/ajax/ingmar@valvekliinik.ee', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Accept': 'application/json'
+                },
+                body: JSON.stringify({
+                    email: email,
+                    _subject: 'Valvekliinik 10. aastapäev — uus huviliste registreering',
+                    _captcha: 'false',
+                    source: 'valvekliinik.ee/10 — juubeliaasta'
+                })
+            })
+            .then(function(r) {
+                if (!r.ok) throw new Error('HTTP ' + r.status);
+                return r.json();
+            })
+            .then(function() {
+                // Success
+                btn.textContent = 'Registreeritud! ✓';
+                btn.classList.add('btn-success');
+                input.value = '';
+                input.placeholder = 'Aitäh! Anname esimesena teada.';
+                input.disabled = true;
+            })
+            .catch(function() {
+                // Error — re-enable form with message
+                btn.textContent = originalText;
+                btn.disabled = false;
+                input.placeholder = 'Viga — proovi uuesti';
+                input.style.borderColor = '#ef4444';
+                input.focus();
+            });
         }
     </script>
 
