@@ -3,24 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Valvekliinik · Kümme aastat | Sepapaja 12/1, Tallinn</title>
-    <meta name="description" content="Valvekliinik tähistab 2026. aastal kümnendat tegutsemisaastat. Erakorraline vastuvõtt, perearst, labor ja eriarstid ühel korrusel Ülemiste Tervisemajas, Sepapaja 12/1, Tallinn.">
+    <meta name="theme-color" content="#0d2d4f">
+    <title>Valvekliinik 10 aastat · Kiire arstiabi Tallinnas | Ülemiste Tervisemaja</title>
+    <meta name="description" content="10 aastat kiiret arstiabi Tallinnas. Erakorraline vastuvõtt, perearst, labor ja eriarstid ühel korrusel Ülemiste Tervisemajas. Enamik patsiente lahkub lahendusega samal päeval. Sepapaja 12/1.">
 
     <!-- Open Graph -->
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Valvekliinik · Kümme aastat">
-    <meta property="og:description" content="Kümme aastat kiiret, asjatundlikku arstiabi Tallinna Ülemiste Tervisemajas. Vastuvõtt, labor, diagnostika ja eriarstid ühel korrusel. Sepapaja 12/1.">
+    <meta property="og:title" content="Valvekliinik 10 aastat · Kiire arstiabi Tallinnas">
+    <meta property="og:description" content="10 aastat kiiret, asjatundlikku arstiabi Tallinna Ülemiste Tervisemajas. Enamik patsiente lahkub lahendusega samal päeval. Vastuvõtt, labor, diagnostika ja eriarstid ühel korrusel. Sepapaja 12/1.">
     <meta property="og:image" content="https://valvekliinik.ee/og-10y.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
     <meta property="og:url" content="https://valvekliinik.ee/10">
     <meta property="og:locale" content="et_EE">
+    <meta property="og:site_name" content="Valvekliinik">
 
     <!-- Canonical -->
     <link rel="canonical" href="https://valvekliinik.ee/10">
+
+    <!-- hreflang -->
+    <link rel="alternate" hreflang="et" href="https://valvekliinik.ee/10">
+    <link rel="alternate" hreflang="fi" href="https://valvekliinik.ee/10">
+    <link rel="alternate" hreflang="x-default" href="https://valvekliinik.ee/10">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='16' fill='%230d2d4f'/><text y='.9em' font-size='72' x='50%' text-anchor='middle' dominant-baseline='hanging' fill='white'>✚</text></svg>">
+    <link rel="icon" type="image/png" href="https://valvekliinik.ee/favicon.ico">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Valvekliinik · Kümme aastat">
+    <meta name="twitter:description" content="Kümme aastat kiiret, asjatundlikku arstiabi Tallinna Ülemiste Tervisemajas. Vastuvõtt, labor, diagnostika ja eriarstid ühel korrusel.">
+    <meta name="twitter:image" content="https://valvekliinik.ee/og-10y.jpg">
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+
+    <!-- Google Analytics GA4 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2RG0NYXV6M"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      function trackEvent(eventName, params) {
+        if (typeof window.gtag === 'function') {
+          window.gtag('event', eventName, params || {});
+        }
+      }
+      gtag('js', new Date());
+      gtag('config', 'G-2RG0NYXV6M');
+    </script>
 
     <!-- Schema.org -->
     <script type="application/ld+json">
@@ -44,6 +77,48 @@
             {
                 "@type": "OpeningHoursSpecification",
                 "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"]
+            }
+        ]
+    }
+    </script>
+
+    <!-- FAQPage Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "Kas pean eelnevalt registreeruma?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Erakorraliseks vastuvõtuks ei ole registreerimine nõutav, tule kohale. Planeeritud vastuvõttudeks soovitame broneerida telefoni teel, et tagada sobiv vastuvõtuaeg ilma ooteta."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Mis vahe on Valvekliinikul ja tavapärasel eraarstil?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Valvekliinik on spetsialiseerunud kiiretele vastuvõttudele ja erakorralistele olukordadele. Töötame laiendatud lahtiolekuaegadega ja meil on kohapeal vahendid, mida tavapraksises ei leidu: infusioonravi, haavahooldus, kohene diagnostika. Ning labor ja eriarstid on samas hoones."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Millised on teie lahtiolekuajad?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Oleme avatud seitse päeva nädalas. Ajakohased lahtiolekuajad leiad meie kodulehelt valvekliinik.ee või küsi registratuurist."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Kus asub kliinik täpselt?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Asume Ülemiste Tervisemaja 2 kolmandal korrusel aadressil Sepapaja 12/1, Tallinn. Maja on hästi ligipääsetav nii autoga kui ka ühistranspordiga. Ülemiste terminal on jalutuskäigu kaugusel."
+                }
             }
         ]
     }
@@ -1116,6 +1191,108 @@
         }
 
         /* ============================================================
+           SOCIAL SHARE BUTTONS
+        ============================================================ */
+        .btn-whatsapp {
+            background: #25D366;
+            border-color: #25D366;
+            color: #fff;
+        }
+        .btn-whatsapp:hover {
+            background: #128C7E;
+            border-color: #128C7E;
+            box-shadow: 0 6px 20px rgba(37,211,102,0.3);
+        }
+        .btn-email-share {
+            background: var(--ink-mid);
+            border-color: var(--ink-mid);
+            color: #fff;
+        }
+        .btn-email-share:hover {
+            background: var(--ink);
+            border-color: var(--ink);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+        }
+
+        /* ============================================================
+           TEASER / OCTOBER 2026 UPGRADE
+        ============================================================ */
+        .teaser-box {
+            background: linear-gradient(135deg, var(--navy-deep) 0%, var(--navy) 60%, #1a4d7a 100%);
+            border-radius: var(--r-lg);
+            padding: clamp(2rem, 5vw, 3rem) clamp(1.5rem, 4vw, 2.5rem);
+            color: var(--white);
+            margin-top: 2.5rem;
+            position: relative;
+            overflow: hidden;
+            text-align: left;
+        }
+        .teaser-box::before {
+            content: '';
+            position: absolute;
+            top: -60px; right: -60px;
+            width: 300px; height: 300px;
+            background: radial-gradient(circle, rgba(45,124,209,0.18) 0%, transparent 65%);
+            pointer-events: none;
+        }
+        .teaser-box-inner { position: relative; z-index: 1; }
+        .teaser-month {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: rgba(255,255,255,0.1);
+            border: 1px solid rgba(255,255,255,0.2);
+            color: rgba(255,255,255,0.85);
+            font-size: 0.75rem;
+            font-weight: 600;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            padding: 0.4rem 1rem;
+            border-radius: 50px;
+            margin-bottom: 1.25rem;
+        }
+        .teaser-month-dot {
+            width: 7px; height: 7px;
+            border-radius: 50%;
+            background: #facc15;
+            flex-shrink: 0;
+            animation: pulse-gold 1.8s ease-in-out infinite;
+        }
+        @keyframes pulse-gold {
+            0%, 100% { opacity: 1; transform: scale(1); }
+            50% { opacity: 0.6; transform: scale(0.75); }
+        }
+        .teaser-headline {
+            font-size: clamp(1.15rem, 3vw, 1.5rem);
+            font-weight: 700;
+            color: var(--white);
+            line-height: 1.3;
+            letter-spacing: -0.02em;
+            margin-bottom: 0.85rem;
+        }
+        .teaser-body {
+            color: rgba(255,255,255,0.7);
+            font-size: 0.97rem;
+            line-height: 1.75;
+            margin-bottom: 1.5rem;
+        }
+        .teaser-hints {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.6rem;
+            margin-bottom: 1.75rem;
+        }
+        .teaser-hint {
+            background: rgba(255,255,255,0.08);
+            border: 1px solid rgba(255,255,255,0.15);
+            color: rgba(255,255,255,0.75);
+            font-size: 0.8rem;
+            font-weight: 500;
+            padding: 0.35rem 0.85rem;
+            border-radius: 50px;
+        }
+
+        /* ============================================================
            ANIMATIONS
         ============================================================ */
         @keyframes fadeUp {
@@ -1190,7 +1367,8 @@
 
             <p class="hero-sub">
                 Haigestuda on piisavalt raske.<br>
-                Esimene küsimus ei peaks olema: kuhu ma nüüd lähen?
+                <strong>Esimene küsimus ei peaks olema: kuhu ma nüüd lähen?</strong><br>
+                Valvekliinik on koht, kus vastus on alati olemas olnud.
             </p>
 
             <div class="hero-buttons">
@@ -1426,22 +1604,40 @@
                     <a href="mailto:info@valvekliinik.ee" class="btn btn-ghost">Kirjuta meile</a>
                 </div>
 
-                <p class="milestone-note">
-                    Oktoobris 2026 toob juubeliaasta midagi konkreetset. Jäta oma e-posti aadress ja saad esimeste seas teada.
-                </p>
-
-                <form class="offer-form" onsubmit="handleOfferForm(event)" style="margin-top:1.25rem;">
-                    <input
-                        type="email"
-                        class="offer-input"
-                        placeholder="Sinu e-posti aadress"
-                        required
-                        autocomplete="email"
-                        aria-label="E-posti aadress"
-                    >
-                    <button type="submit" class="btn btn-blue">Teavita mind</button>
-                </form>
-                <p class="milestone-note">Ainult olulised uudised. Rämpsposti me ei saada.</p>
+                <div class="teaser-box">
+                    <div class="teaser-box-inner">
+                        <div class="teaser-month">
+                            <span class="teaser-month-dot"></span>
+                            Oktoober 2026 · Juubeliüritus
+                        </div>
+                        <p class="teaser-headline">Kümme aastat väärib tähistamist.<br>Päris tähistamist.</p>
+                        <p class="teaser-body">
+                            Oktoobris 2026 tähistame kümnenda aastapäeva millegagi, mis läheb korda meie patsientidele — mitte ainult meile. Täpsed detailid saavad selgeks sügisel. Kes soovib esimeste seas teada, jätab oma e-posti.
+                        </p>
+                        <div class="teaser-hints">
+                            <span class="teaser-hint">🎁 Juubelipakkumine</span>
+                            <span class="teaser-hint">📅 Ühekordne sündmus</span>
+                            <span class="teaser-hint">🩺 Meie patsientidele</span>
+                        </div>
+                        <form class="offer-form" id="jubilee-email-form" onsubmit="handleOfferForm(event)" style="margin:0;">
+                            <input
+                                type="email"
+                                name="email"
+                                class="offer-input"
+                                placeholder="Sinu e-posti aadress"
+                                required
+                                autocomplete="email"
+                                aria-label="E-posti aadress"
+                                style="background:rgba(255,255,255,0.95);color:var(--ink);"
+                            >
+                            <button type="submit" class="btn btn-blue">Teavita mind</button>
+                            <p id="jubilee-email-status" aria-live="polite" style="position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden;">&nbsp;</p>
+                        </form>
+                        <p style="font-size:0.8rem;color:rgba(255,255,255,0.45);margin-top:0.75rem;margin-bottom:0;">
+                            Ainult olulised uudised. Rämpsposti me ei saada. Loobuda saab igal ajal.
+                        </p>
+                    </div>
+                </div>
 
             </div>
         </div>
@@ -1470,11 +1666,20 @@
             </div>
 
             <div class="referral-actions">
+                <a href="https://wa.me/?text=Valvekliinik%20%C3%9Clemiste%20Tervisemajas%20on%20k%C3%BCmme%20aastat%20tegutsenud%20erakorralise%20meditsiini%20kliinik%2C%20kus%20arsti%20juurde%20p%C3%A4%C3%A4seb%20kiiresti%20ja%20kogu%20vajalik%20on%20%C3%BChes%20majas.%20Soovitan%3A%20https%3A%2F%2Fvalvekliinik.ee%2F10" class="btn btn-whatsapp" target="_blank" rel="noopener noreferrer">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16" aria-hidden="true"><path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/></svg>
+                    WhatsApp
+                </a>
                 <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fvalvekliinik.ee%2F10" class="btn btn-blue" target="_blank" rel="noopener noreferrer">
-                    Jaga Facebookis
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16" aria-hidden="true"><path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/></svg>
+                    Facebook
+                </a>
+                <a href="mailto:?subject=Valvekliinik%20%E2%80%93%20k%C3%BCmme%20aastat%20usaldusv%C3%A4%C3%A4rset%20arstiabi&body=Tere%2C%0A%0ASoovitan%20Valvekliinikut%20%C3%9Clemiste%20Tervisemajas.%20Kl%C3%BCinik%20on%20tegutsenud%20j%C3%BCba%2010%20aastat%20%E2%80%94%20erakorraline%20vastuvõtt%2C%20labor%20ja%20eriarstid%20k%C3%B5ik%20%C3%BChes%20majas.%0A%0AV%C3%A4lislink%3A%20https%3A%2F%2Fvalvekliinik.ee%2F10" class="btn btn-email-share" target="_blank" rel="noopener noreferrer">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16" aria-hidden="true"><path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"/></svg>
+                    E-postiga
                 </a>
                 <a href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fvalvekliinik.ee%2F10" class="btn btn-ghost" target="_blank" rel="noopener noreferrer">
-                    Jaga LinkedInis
+                    LinkedIn
                 </a>
             </div>
 
@@ -1645,6 +1850,79 @@
          SCRIPTS (vanilla, zero dependencies)
     ============================================================ -->
     <script>
+        function trackClick(kind, label, href) {
+            trackEvent('cta_click', {
+                event_category: 'engagement',
+                event_label: label,
+                cta_type: kind,
+                destination: href || window.location.pathname
+            });
+        }
+
+        function trackShare(network) {
+            trackEvent('share_click', {
+                event_category: 'engagement',
+                event_label: network,
+                method: network,
+                content_type: 'jubilee_landing_page'
+            });
+        }
+
+        function bindTracking() {
+            document.querySelectorAll('a[href^="tel:"]').forEach(function(link) {
+                link.addEventListener('click', function() {
+                    trackClick('phone', this.textContent.trim() || 'phone link', this.getAttribute('href'));
+                });
+            });
+
+            document.querySelectorAll('a[href^="mailto:"]').forEach(function(link) {
+                link.addEventListener('click', function() {
+                    trackClick('email', this.textContent.trim() || 'email link', this.getAttribute('href'));
+                });
+            });
+
+            document.querySelectorAll('a[href="#asukoht"], a[href="#teenused"], a[href="#kkk"]').forEach(function(link) {
+                link.addEventListener('click', function() {
+                    trackClick('internal_navigation', this.textContent.trim(), this.getAttribute('href'));
+                });
+            });
+
+            var shareLinks = [
+                { selector: 'a[href*="wa.me"]', network: 'whatsapp' },
+                { selector: 'a[href*="facebook.com/sharer"]', network: 'facebook' },
+                { selector: 'a[href*="linkedin.com/sharing/share-offsite"]', network: 'linkedin' },
+                { selector: 'a.btn-email-share', network: 'email_share' }
+            ];
+
+            shareLinks.forEach(function(item) {
+                var link = document.querySelector(item.selector);
+                if (link) {
+                    link.addEventListener('click', function() {
+                        trackShare(item.network);
+                    });
+                }
+            });
+
+            document.querySelectorAll('.faq-q').forEach(function(btn) {
+                btn.addEventListener('click', function() {
+                    var question = this.childNodes[0] && this.childNodes[0].textContent
+                        ? this.childNodes[0].textContent.trim()
+                        : 'faq';
+                    var willOpen = this.getAttribute('aria-expanded') !== 'true';
+
+                    if (willOpen) {
+                        trackEvent('faq_open', {
+                            event_category: 'engagement',
+                            event_label: question,
+                            section: 'faq'
+                        });
+                    }
+                });
+            });
+        }
+
+        bindTracking();
+
         // FAQ accordion
         document.querySelectorAll('.faq-q').forEach(function(btn) {
             btn.addEventListener('click', function() {
@@ -1667,6 +1945,12 @@
         function copyShareText() {
             var text = document.getElementById('shareText').textContent.trim();
             var btn = document.getElementById('copyBtn');
+
+            trackEvent('share_copy', {
+                event_category: 'engagement',
+                event_label: 'copy_referral_text',
+                content_type: 'jubilee_landing_page'
+            });
 
             if (navigator.clipboard && navigator.clipboard.writeText) {
                 navigator.clipboard.writeText(text).then(function() {
@@ -1716,14 +2000,24 @@
             var form = e.target;
             var input = form.querySelector('input[type="email"]');
             var btn = form.querySelector('button[type="submit"]');
+            var status = document.getElementById('jubilee-email-status');
             var email = input.value.trim();
 
             if (!email) return;
+
+            trackEvent('generate_lead', {
+                event_category: 'lead',
+                event_label: 'jubilee_email_submit_attempt',
+                form_id: form.id || 'jubilee-email-form',
+                lead_type: 'email_signup',
+                page_location: window.location.href
+            });
 
             // Disable button during submission
             var originalText = btn.textContent;
             btn.textContent = 'Saadan…';
             btn.disabled = true;
+            if (status) status.textContent = 'Saadan vormi.';
 
             fetch('https://formsubmit.co/ajax/ingmar@valvekliinik.ee', {
                 method: 'POST',
@@ -1735,6 +2029,7 @@
                     email: email,
                     _subject: 'Valvekliinik 10. aastapäev — uus huviliste registreering',
                     _captcha: 'false',
+                    _cc: 'evamaria@valvekliinik.ee',
                     source: 'valvekliinik.ee/10 — juubeliaasta'
                 })
             })
@@ -1749,6 +2044,15 @@
                 input.value = '';
                 input.placeholder = 'Aitäh! Anname esimesena teada.';
                 input.disabled = true;
+                if (status) status.textContent = 'E-posti registreerimine õnnestus.';
+
+                trackEvent('sign_up_success', {
+                    event_category: 'lead',
+                    event_label: 'jubilee_email_signup_success',
+                    form_id: form.id || 'jubilee-email-form',
+                    signup_method: 'formsubmit_ajax',
+                    page_location: window.location.href
+                });
             })
             .catch(function() {
                 // Error — re-enable form with message
@@ -1757,6 +2061,14 @@
                 input.placeholder = 'Viga — proovi uuesti';
                 input.style.borderColor = '#ef4444';
                 input.focus();
+                if (status) status.textContent = 'E-posti registreerimine ebaõnnestus.';
+
+                trackEvent('form_submit_error', {
+                    event_category: 'error',
+                    event_label: 'jubilee_email_signup_error',
+                    form_id: form.id || 'jubilee-email-form',
+                    page_location: window.location.href
+                });
             });
         }
     </script>
