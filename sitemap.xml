@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://valvekliinik.ee/10</loc>
+    <lastmod>2026-04-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <!-- Estonian -->
+    <xhtml:link rel="alternate" hreflang="et" href="https://valvekliinik.ee/10"/>
+    <!-- Finnish (cross-border patients) -->
+    <xhtml:link rel="alternate" hreflang="fi" href="https://valvekliinik.ee/10"/>
+    <!-- x-default -->
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://valvekliinik.ee/10"/>
+  </url>
+</urlset>
