@@ -2238,6 +2238,25 @@
 
         bindTracking();
 
+        // ── Email Form: form_start (fires once when user first focuses the email input) ──
+        (function() {
+            var emailInput = document.getElementById('jubilee-email-input');
+            var formStartFired = false;
+            if (emailInput) {
+                emailInput.addEventListener('focus', function() {
+                    if (!formStartFired) {
+                        formStartFired = true;
+                        trackEvent('form_start', {
+                            event_category: 'lead',
+                            event_label: 'jubilee_email_form_start',
+                            form_id: 'jubilee-email-form',
+                            page_location: window.location.href
+                        });
+                    }
+                }, { once: false });
+            }
+        })();
+
         // FAQ accordion
         document.querySelectorAll('.faq-q').forEach(function(btn) {
             btn.addEventListener('click', function() {
@@ -2324,7 +2343,7 @@
 
             if (!email) return;
 
-            trackEvent('generate_lead', {
+            trackEvent('form_submit_attempt', {
                 event_category: 'lead',
                 event_label: 'jubilee_email_submit_attempt',
                 form_id: form.id || 'jubilee-email-form',
@@ -2368,6 +2387,15 @@
                 formParent.insertBefore(successMsg, form.nextSibling);
                 if (status) status.textContent = 'E-posti registreerimine õnnestus.';
 
+                // GA4 recommended conversion event — fires only on confirmed submission
+                trackEvent('generate_lead', {
+                    event_category: 'lead',
+                    event_label: 'jubilee_email_signup',
+                    form_id: form.id || 'jubilee-email-form',
+                    lead_type: 'email_signup',
+                    signup_method: 'formsubmit_ajax',
+                    page_location: window.location.href
+                });
                 trackEvent('signup_success', {
                     event_category: 'lead',
                     event_label: 'jubilee_email_signup_success',
