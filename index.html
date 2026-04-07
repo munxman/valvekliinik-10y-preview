@@ -2196,7 +2196,7 @@
                 });
             });
 
-            document.querySelectorAll('a[href="#asukoht"], a[href="#teenused"], a[href="#kkk"]').forEach(function(link) {
+            document.querySelectorAll('a[href="#teenused"], a[href="#miks"], a[href="#kolmas-korrus"], a[href="#juubel"], a[href="#kkk"]').forEach(function(link) {
                 link.addEventListener('click', function() {
                     trackClick('internal_navigation', this.textContent.trim(), this.getAttribute('href'));
                 });
@@ -2237,6 +2237,38 @@
         }
 
         bindTracking();
+
+        // ── Section visibility tracking (funnel: page_view → section_view → form_start → generate_lead) ──
+        (function() {
+            var sectionTargets = [
+                { id: 'juubel',       label: 'jubilee_anniversary' },
+                { id: 'teenused',     label: 'services' },
+                { id: 'kolmas-korrus',label: 'floor_story' }
+            ];
+            if (!window.IntersectionObserver) return;
+            var sectionFired = {};
+            var obs = new IntersectionObserver(function(entries) {
+                entries.forEach(function(entry) {
+                    if (entry.isIntersecting && !sectionFired[entry.target.id]) {
+                        sectionFired[entry.target.id] = true;
+                        var label = entry.target.dataset.trackLabel || entry.target.id;
+                        trackEvent('section_view', {
+                            event_category: 'engagement',
+                            event_label: label,
+                            section_id: entry.target.id,
+                            page_location: window.location.href
+                        });
+                    }
+                });
+            }, { threshold: 0.3 });
+            sectionTargets.forEach(function(t) {
+                var el = document.getElementById(t.id);
+                if (el) {
+                    el.dataset.trackLabel = t.label;
+                    obs.observe(el);
+                }
+            });
+        })();
 
         // ── Email Form: form_start (fires once when user first focuses the email input) ──
         (function() {
